@@ -14,31 +14,48 @@ public class AdvancedGraph extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.advanced);
 
+		// draw sin curve
+		int num = 150;
+		GraphViewData[] data = new GraphViewData[num];
+		double v=0;
+		for (int i=0; i<num; i++) {
+			v += 0.2;
+			data[i] = new GraphViewData(i, Math.sin(v));
+		}
 		// graph with dynamically genereated horizontal and vertical labels
 		GraphView graphView = new GraphView(
 				this
-				, new GraphViewData[] {
-						new GraphViewData(0, 1.5d)
-						, new GraphViewData(1, 2.0d)
-						, new GraphViewData(2, 1.5d)
-						, new GraphViewData(2.5, 3.0d) // another frequency
-						, new GraphViewData(3, 1.0d)
-						, new GraphViewData(3.1, 1.1d)
-						, new GraphViewData(3.2, 1.2d)
-						, new GraphViewData(3.3, 1.4d)
-						, new GraphViewData(3.4, 1.8d)
-						, new GraphViewData(3.5, 2.6d)
-						, new GraphViewData(3.6, 5.2d)
-						, new GraphViewData(7, 2.5d)
-				}
+				, data
+				, "GraphViewDemo"
+				, null
+				, null
+		);
+		// set view port, start=2, size=20
+		graphView.setViewPort(2, 40);
+		graphView.setScrollable(true);
+		LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);
+		layout.addView(graphView);
+
+		// draw random curve
+		num = 1000;
+		data = new GraphViewData[num];
+		v=0;
+		for (int i=0; i<num; i++) {
+			v += 0.2;
+			data[i] = new GraphViewData(i, Math.sin(Math.random()*v));
+		}
+		// graph with dynamically genereated horizontal and vertical labels
+		graphView = new GraphView(
+				this
+				, data
 				, "GraphViewDemo"
 				, null
 				, null
 		);
 		// set view port, start=2, size=2
-		graphView.setViewPort(2, 2);
+		graphView.setViewPort(2, 10);
 		graphView.setScrollable(true);
-		LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);
+		layout = (LinearLayout) findViewById(R.id.graph2);
 		layout.addView(graphView);
 	}
 }
