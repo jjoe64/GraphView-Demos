@@ -54,7 +54,8 @@ public class AdvancedGraph extends Activity {
 		);
 		// set view port, start=2, size=2
 		graphView.setViewPort(2, 10);
-		graphView.setScrollable(true);
+		graphView.setScalable(true);
+		graphView.setDrawBackground(true);
 		layout = (LinearLayout) findViewById(R.id.graph2);
 		layout.addView(graphView);
 	}
