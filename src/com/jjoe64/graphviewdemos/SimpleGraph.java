@@ -12,7 +12,7 @@ public class SimpleGraph extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.simple);
 
 		// graph with dynamically genereated horizontal and vertical labels
 		GraphView graphView = new GraphView(
