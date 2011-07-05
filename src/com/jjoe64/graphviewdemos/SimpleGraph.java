@@ -32,7 +32,7 @@ public class SimpleGraph extends Activity {
 		LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);
 		layout.addView(graphView);
 
-		// graph with custom labels
+		// graph with custom labels and drawBackground
 		graphView = new GraphView(
 				this
 				, new GraphViewData[] {
@@ -47,6 +47,7 @@ public class SimpleGraph extends Activity {
 				, new String[] {"2 days ago", "yesterday", "today", "tomorrow"}
 				, new String[] {"high", "middle", "low"}
 		);
+		graphView.setDrawBackground(true);
 		layout = (LinearLayout) findViewById(R.id.graph2);
 		layout.addView(graphView);
 	}
