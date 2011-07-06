@@ -46,6 +46,7 @@ Maybe you have to add the GraphView project to the build path of GraphView-Demos
 Understand SimpleGraph.java
 When you look into this file you see how easy it is to create a simple graph.
 
+<pre>
 // graph with dynamically genereated horizontal and vertical labels  
 GraphView graphView = new GraphView(  
   this // context  
@@ -63,17 +64,20 @@ GraphView graphView = new GraphView(
 );  
 LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);  
 layout.addView(graphView);  
+</pre>
+
 There isn't much to say about that. But one important thing: Always give to data array sorted by x-values (ASC)!!
 For performance, the library doesn't sort the data.
 
 Zoom and Scrolling - Advanced.java
 For demonstration the zooming and scrolling feature we need more example data. So in Advanced.java I generate a few data sets with random and sinus algorithm.
 
+<pre>
 // draw random curve  
 int num = 1000;  
 GraphViewData[] data = new GraphViewData[num];  
 double v=0;  
-for (int i=0; i<num; i++) {  
+for (int i=0; i&lt;num; i++) {  
  v += 0.2;  
  data[i] = new GraphViewData(i, Math.sin(Math.random()*v));  
 }  
@@ -91,6 +95,7 @@ graphView.setScalable(true);
 graphView.setDrawBackground(true);  
 LinearLayout layout = (LinearLayout) findViewById(R.id.graph2);  
 layout.addView(graphView);  
+</pre>
 
 That's all about it for now.
 
