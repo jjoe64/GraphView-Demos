@@ -30,7 +30,7 @@ public class AdvancedGraph extends Activity {
 				, null
 				, null
 		);
-		// set view port, start=2, size=20
+		// set view port, start=2, size=40
 		graphView.setViewPort(2, 40);
 		graphView.setScrollable(true);
 		LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);
@@ -52,7 +52,7 @@ public class AdvancedGraph extends Activity {
 				, null
 				, null
 		);
-		// set view port, start=2, size=2
+		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
 		graphView.setDrawBackground(true);

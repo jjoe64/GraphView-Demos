@@ -16,7 +16,7 @@ public class SimpleGraph extends Activity {
 
 		// graph with dynamically genereated horizontal and vertical labels
 		GraphView graphView = new GraphView(
-				this
+				this // context
 				, new GraphViewData[] {
 						new GraphViewData(1, 2.0d)
 						, new GraphViewData(2, 1.5d)
@@ -24,10 +24,10 @@ public class SimpleGraph extends Activity {
 						, new GraphViewData(3, 2.5d)
 						, new GraphViewData(4, 1.0d)
 						, new GraphViewData(5, 3.0d)
-				}
-				, "GraphViewDemo"
-				, null
-				, null
+				} // data
+				, "GraphViewDemo" // heading
+				, null // dynamic labels
+				, null // dynamic labels
 		);
 		LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);
 		layout.addView(graphView);
