@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
+import com.jjoe64.graphview.LineGraphView;
 
 public class AdvancedGraph extends Activity {
 	/** Called when the activity is first created. */
@@ -23,7 +23,7 @@ public class AdvancedGraph extends Activity {
 			data[i] = new GraphViewData(i, Math.sin(v));
 		}
 		// graph with dynamically genereated horizontal and vertical labels
-		GraphView graphView = new GraphView(
+		LineGraphView graphView = new LineGraphView(
 				this
 				, data
 				, "GraphViewDemo"
@@ -45,7 +45,7 @@ public class AdvancedGraph extends Activity {
 			data[i] = new GraphViewData(i, Math.sin(Math.random()*v));
 		}
 		// graph with dynamically genereated horizontal and vertical labels
-		graphView = new GraphView(
+		graphView = new LineGraphView(
 				this
 				, data
 				, "GraphViewDemo"

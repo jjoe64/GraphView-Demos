@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
+import com.jjoe64.graphview.LineGraphView;
 
 public class SimpleGraph extends Activity {
 	/** Called when the activity is first created. */
@@ -15,7 +15,7 @@ public class SimpleGraph extends Activity {
 		setContentView(R.layout.simple);
 
 		// graph with dynamically genereated horizontal and vertical labels
-		GraphView graphView = new GraphView(
+		LineGraphView graphView = new LineGraphView(
 				this // context
 				, new GraphViewData[] {
 						new GraphViewData(1, 2.0d)
@@ -33,7 +33,7 @@ public class SimpleGraph extends Activity {
 		layout.addView(graphView);
 
 		// graph with custom labels and drawBackground
-		graphView = new GraphView(
+		graphView = new LineGraphView(
 				this
 				, new GraphViewData[] {
 						new GraphViewData(1, 2.0d)
