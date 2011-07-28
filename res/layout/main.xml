@@ -3,6 +3,13 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical">
+	<RadioGroup
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="Line Graphs" android:id="@+id/radio_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+		<RadioButton android:text="Bar Graphs" android:id="@+id/radio_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</RadioGroup>
 	<Button
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"

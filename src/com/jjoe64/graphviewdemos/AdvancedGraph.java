@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import com.jjoe64.graphview.BarGraphView;
+import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.LineGraphView;
 
@@ -12,7 +14,7 @@ public class AdvancedGraph extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.advanced);
+		setContentView(R.layout.graphs);
 
 		// draw sin curve
 		int num = 150;
@@ -23,13 +25,24 @@ public class AdvancedGraph extends Activity {
 			data[i] = new GraphViewData(i, Math.sin(v));
 		}
 		// graph with dynamically genereated horizontal and vertical labels
-		LineGraphView graphView = new LineGraphView(
-				this
-				, data
-				, "GraphViewDemo"
-				, null
-				, null
-		);
+		GraphView graphView;
+		if (getIntent().getStringExtra("type").equals("bar")) {
+			graphView = new BarGraphView(
+					this
+					, data
+					, "GraphViewDemo"
+					, null
+					, null
+			);
+		} else {
+			graphView = new LineGraphView(
+					this
+					, data
+					, "GraphViewDemo"
+					, null
+					, null
+			);
+		}
 		// set view port, start=2, size=40
 		graphView.setViewPort(2, 40);
 		graphView.setScrollable(true);
@@ -45,17 +58,27 @@ public class AdvancedGraph extends Activity {
 			data[i] = new GraphViewData(i, Math.sin(Math.random()*v));
 		}
 		// graph with dynamically genereated horizontal and vertical labels
-		graphView = new LineGraphView(
-				this
-				, data
-				, "GraphViewDemo"
-				, null
-				, null
-		);
+		if (getIntent().getStringExtra("type").equals("bar")) {
+			graphView = new BarGraphView(
+					this
+					, data
+					, "GraphViewDemo"
+					, null
+					, null
+			);
+		} else {
+			graphView = new LineGraphView(
+					this
+					, data
+					, "GraphViewDemo"
+					, null
+					, null
+			);
+			((LineGraphView) graphView).setDrawBackground(true);
+		}
 		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
-		graphView.setDrawBackground(true);
 		layout = (LinearLayout) findViewById(R.id.graph2);
 		layout.addView(graphView);
 	}
