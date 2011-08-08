@@ -20,4 +20,9 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/btn_advanced"
 		android:text="Advanced Graphs" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_muliple_series"
+		android:text="Advanced - Multiple Series" />
 </LinearLayout>

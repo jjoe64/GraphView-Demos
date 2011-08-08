@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 import com.jjoe64.graphview.BarGraphView;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
+import com.jjoe64.graphview.GraphView.GraphViewSeries;
 import com.jjoe64.graphview.LineGraphView;
 
 public class AdvancedGraph extends Activity {
@@ -29,20 +30,16 @@ public class AdvancedGraph extends Activity {
 		if (getIntent().getStringExtra("type").equals("bar")) {
 			graphView = new BarGraphView(
 					this
-					, data
 					, "GraphViewDemo"
-					, null
-					, null
 			);
 		} else {
 			graphView = new LineGraphView(
 					this
-					, data
 					, "GraphViewDemo"
-					, null
-					, null
 			);
 		}
+		// add data
+		graphView.addSeries(new GraphViewSeries(null, null, data));
 		// set view port, start=2, size=40
 		graphView.setViewPort(2, 40);
 		graphView.setScrollable(true);
@@ -61,21 +58,17 @@ public class AdvancedGraph extends Activity {
 		if (getIntent().getStringExtra("type").equals("bar")) {
 			graphView = new BarGraphView(
 					this
-					, data
 					, "GraphViewDemo"
-					, null
-					, null
 			);
 		} else {
 			graphView = new LineGraphView(
 					this
-					, data
 					, "GraphViewDemo"
-					, null
-					, null
 			);
 			((LineGraphView) graphView).setDrawBackground(true);
 		}
+		// add data
+		graphView.addSeries(new GraphViewSeries(null, null, data));
 		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
