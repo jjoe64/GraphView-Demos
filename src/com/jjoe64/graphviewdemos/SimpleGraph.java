@@ -18,7 +18,7 @@ public class SimpleGraph extends Activity {
 		setContentView(R.layout.graphs);
 
 		// init example series data
-		GraphViewSeries exampleSeries = new GraphViewSeries(null, null, new GraphViewData[] {
+		GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {
 				new GraphViewData(1, 2.0d)
 				, new GraphViewData(2, 1.5d)
 				, new GraphViewData(2.5, 3.0d) // another frequency

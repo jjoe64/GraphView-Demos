@@ -39,7 +39,7 @@ public class AdvancedGraph extends Activity {
 			);
 		}
 		// add data
-		graphView.addSeries(new GraphViewSeries(null, null, data));
+		graphView.addSeries(new GraphViewSeries(data));
 		// set view port, start=2, size=40
 		graphView.setViewPort(2, 40);
 		graphView.setScrollable(true);
@@ -68,7 +68,7 @@ public class AdvancedGraph extends Activity {
 			((LineGraphView) graphView).setDrawBackground(true);
 		}
 		// add data
-		graphView.addSeries(new GraphViewSeries(null, null, data));
+		graphView.addSeries(new GraphViewSeries(data));
 		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
