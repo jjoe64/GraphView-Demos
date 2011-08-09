@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.GraphView.GraphViewSeries;
+import com.jjoe64.graphview.GraphView.LegendAlign;
 import com.jjoe64.graphview.LineGraphView;
 
 public class AdvancedMultipleSeriesGraph extends Activity {
@@ -27,7 +28,7 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 			v += 0.2;
 			data[i] = new GraphViewData(i, Math.sin(v));
 		}
-		GraphViewSeries seriesSin = new GraphViewSeries(null, Color.rgb(200, 50, 00), data);
+		GraphViewSeries seriesSin = new GraphViewSeries("Sinus curve", Color.rgb(200, 50, 00), data);
 
 		// cos curve
 		data = new GraphViewData[num];
@@ -36,7 +37,7 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 			v += 0.2;
 			data[i] = new GraphViewData(i, Math.cos(v));
 		}
-		GraphViewSeries seriesCos = new GraphViewSeries(null, Color.rgb(90, 250, 00), data);
+		GraphViewSeries seriesCos = new GraphViewSeries("Cosinus curve", Color.rgb(90, 250, 00), data);
 
 		// random curve
 		num = 1000;
@@ -46,7 +47,7 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 			v += 0.2;
 			data[i] = new GraphViewData(i, Math.sin(Math.random()*v));
 		}
-		GraphViewSeries seriesRnd = new GraphViewSeries(null, null, data);
+		GraphViewSeries seriesRnd = new GraphViewSeries("Random curve", null, data);
 
 		// graph with dynamically genereated horizontal and vertical labels
 		LineGraphView graphView;
@@ -57,6 +58,8 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 		// add data
 		graphView.addSeries(seriesCos);
 		graphView.addSeries(seriesSin);
+		// set legend
+		graphView.setShowLegend(true);
 		// set view port, start=2, size=40
 		graphView.setViewPort(2, 40);
 		graphView.setScrollable(true);
@@ -72,6 +75,10 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 		graphView.addSeries(seriesCos);
 		graphView.addSeries(seriesSin);
 		graphView.addSeries(seriesRnd);
+		// set legend
+		graphView.setShowLegend(true);
+		graphView.setLegendAlign(LegendAlign.BOTTOM);
+		graphView.setLegendWidth(200);
 		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
