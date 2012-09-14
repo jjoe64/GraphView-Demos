@@ -33,6 +33,12 @@ public class MainActivity extends Activity {
 				startGraphActivity(AdvancedMultipleSeriesGraph.class);
 			}
 		});
+		((Button) findViewById(R.id.btn_realtime)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startGraphActivity(RealtimeGraph.class);
+			}
+		});
 	}
 
 	private void startGraphActivity(Class<? extends Activity> activity) {

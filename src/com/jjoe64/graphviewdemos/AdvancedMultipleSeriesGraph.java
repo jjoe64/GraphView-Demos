@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.jjoe64.graphview.GraphView.GraphViewData;
-import com.jjoe64.graphview.GraphView.GraphViewSeries;
-import com.jjoe64.graphview.GraphView.GraphViewStyle;
 import com.jjoe64.graphview.GraphView.LegendAlign;
+import com.jjoe64.graphview.GraphViewSeries;
+import com.jjoe64.graphview.GraphViewSeries.GraphViewStyle;
 import com.jjoe64.graphview.LineGraphView;
 
 public class AdvancedMultipleSeriesGraph extends Activity {

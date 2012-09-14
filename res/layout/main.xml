@@ -25,4 +25,9 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/btn_muliple_series"
 		android:text="Advanced - Multiple Series" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_realtime"
+		android:text="Realtime Graph" />
 </LinearLayout>
