@@ -39,6 +39,12 @@ public class MainActivity extends Activity {
 				startGraphActivity(RealtimeGraph.class);
 			}
 		});
+		((Button) findViewById(R.id.btn_styles)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startGraphActivity(StylesGraph.class);
+			}
+		});
 	}
 
 	private void startGraphActivity(Class<? extends Activity> activity) {

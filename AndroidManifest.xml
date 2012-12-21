@@ -17,6 +17,7 @@
         <activity android:name="AdvancedGraph"></activity>
         <activity android:name="AdvancedMultipleSeriesGraph"></activity>
         <activity android:name="RealtimeGraph"></activity>
-
+        <activity android:name="StylesGraph"></activity>
+        
     </application>
 </manifest>

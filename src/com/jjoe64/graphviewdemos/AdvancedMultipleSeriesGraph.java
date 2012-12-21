@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.GraphView.LegendAlign;
 import com.jjoe64.graphview.GraphViewSeries;
-import com.jjoe64.graphview.GraphViewSeries.GraphViewStyle;
+import com.jjoe64.graphview.GraphViewSeries.GraphViewSeriesStyle;
 import com.jjoe64.graphview.LineGraphView;
 
 public class AdvancedMultipleSeriesGraph extends Activity {
@@ -29,16 +29,16 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 			v += 0.2;
 			data[i] = new GraphViewData(i, Math.sin(v));
 		}
-		GraphViewSeries seriesSin = new GraphViewSeries("Sinus curve", new GraphViewStyle(Color.rgb(200, 50, 00), 3), data);
+		GraphViewSeries seriesSin = new GraphViewSeries("Sinus curve", new GraphViewSeriesStyle(Color.rgb(200, 50, 00), 3), data);
 
 		// cos curve
 		data = new GraphViewData[num];
 		v=0;
-		for (int i=0; i<num; i++) {
+		for (int i=50; i<num-50; i++) {
 			v += 0.2;
-			data[i] = new GraphViewData(i, Math.cos(v));
+			data[i-50] = new GraphViewData(i, Math.cos(v));
 		}
-		GraphViewSeries seriesCos = new GraphViewSeries("Cosinus curve", new GraphViewStyle(Color.rgb(90, 250, 00), 3), data);
+		GraphViewSeries seriesCos = new GraphViewSeries("Cosinus curve", new GraphViewSeriesStyle(Color.rgb(90, 250, 00), 3), data);
 
 		// random curve
 		num = 1000;

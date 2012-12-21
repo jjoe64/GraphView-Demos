@@ -30,4 +30,9 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/btn_realtime"
 		android:text="Realtime Graph" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_styles"
+		android:text="Styles Graph" />
 </LinearLayout>
