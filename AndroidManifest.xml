@@ -18,6 +18,7 @@
         <activity android:name="AdvancedMultipleSeriesGraph"></activity>
         <activity android:name="RealtimeGraph"></activity>
         <activity android:name="StylesGraph"></activity>
+        <activity android:name="RemoveAddSeries"></activity>
         
     </application>
 </manifest>

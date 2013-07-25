@@ -45,6 +45,12 @@ public class MainActivity extends Activity {
 				startGraphActivity(StylesGraph.class);
 			}
 		});
+		((Button) findViewById(R.id.btn_removeadd)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startGraphActivity(RemoveAddSeries.class);
+			}
+		});
 	}
 
 	private void startGraphActivity(Class<? extends Activity> activity) {
