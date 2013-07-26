@@ -51,6 +51,12 @@ public class MainActivity extends Activity {
 				startGraphActivity(RemoveAddSeries.class);
 			}
 		});
+		((Button) findViewById(R.id.btn_customlabelformatter)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startGraphActivity(CustomLabelFormatterActivity.class);
+			}
+		});
 	}
 
 	private void startGraphActivity(Class<? extends Activity> activity) {

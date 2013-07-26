@@ -19,6 +19,7 @@
         <activity android:name="RealtimeGraph"></activity>
         <activity android:name="StylesGraph"></activity>
         <activity android:name="RemoveAddSeries"></activity>
+        <activity android:name="CustomLabelFormatterActivity"></activity>
         
     </application>
 </manifest>

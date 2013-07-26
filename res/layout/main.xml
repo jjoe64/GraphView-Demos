@@ -40,4 +40,9 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/btn_removeadd"
 		android:text="Remove / Add Series" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_customlabelformatter"
+		android:text="Custom Label Formatter" />
 </LinearLayout>
