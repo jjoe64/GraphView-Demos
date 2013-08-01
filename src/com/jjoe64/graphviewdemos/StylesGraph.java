@@ -17,7 +17,6 @@ import com.jjoe64.graphview.ValueDependentColor;
 public class StylesGraph extends Activity {
 	private final Handler mHandler = new Handler();
 	private Runnable mTimer;
-	private GraphView graphView;
 	private GraphViewSeries exampleSeries2;
 
 	private double getRandom() {
@@ -34,6 +33,7 @@ public class StylesGraph extends Activity {
 
 		/*
 		 * Graph 1: individual label colors
+		 * fix num labels
 		 */
 		// init example series data
 		GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {
@@ -45,7 +45,7 @@ public class StylesGraph extends Activity {
 				, new GraphViewData(5, 3.0d)
 		});
 
-		// graph with dynamically genereated horizontal and vertical labels
+		// graph with dynamically generated horizontal and vertical labels
 		GraphView graphView;
 		if (getIntent().getStringExtra("type").equals("bar")) {
 			graphView = new BarGraphView(
@@ -63,6 +63,10 @@ public class StylesGraph extends Activity {
 		graphView.getGraphViewStyle().setGridColor(Color.GREEN);
 		graphView.getGraphViewStyle().setHorizontalLabelsColor(Color.YELLOW);
 		graphView.getGraphViewStyle().setVerticalLabelsColor(Color.RED);
+		graphView.getGraphViewStyle().setTextSize(getResources().getDimension(R.dimen.big));
+		graphView.getGraphViewStyle().setNumHorizontalLabels(5);
+		graphView.getGraphViewStyle().setNumVerticalLabels(4);
+		graphView.getGraphViewStyle().setVerticalLabelsWidth(300);
 
 		graphView.addSeries(exampleSeries); // data
 
