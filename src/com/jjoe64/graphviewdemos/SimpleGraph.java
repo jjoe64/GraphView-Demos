@@ -1,6 +1,7 @@
 package com.jjoe64.graphviewdemos;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
@@ -57,6 +58,7 @@ public class SimpleGraph extends Activity {
 					, "GraphViewDemo"
 			);
 			((LineGraphView) graphView).setDrawBackground(true);
+			((LineGraphView) graphView).setBackgroundColor(Color.rgb(80, 30, 30));
 		}
 		// custom static labels
 		graphView.setHorizontalLabels(new String[] {"2 days ago", "yesterday", "today", "tomorrow"});
