@@ -45,4 +45,9 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/btn_customlabelformatter"
 		android:text="Custom Label Formatter" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_ownmodelasdata"
+		android:text="Own Model as Data" />
 </LinearLayout>

@@ -57,6 +57,12 @@ public class MainActivity extends Activity {
 				startGraphActivity(CustomLabelFormatterActivity.class);
 			}
 		});
+		((Button) findViewById(R.id.btn_ownmodelasdata)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startGraphActivity(OwnModelAsData.class);
+			}
+		});
 	}
 
 	private void startGraphActivity(Class<? extends Activity> activity) {

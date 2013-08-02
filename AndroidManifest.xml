@@ -20,6 +20,7 @@
         <activity android:name="StylesGraph"></activity>
         <activity android:name="RemoveAddSeries"></activity>
         <activity android:name="CustomLabelFormatterActivity"></activity>
+        <activity android:name="OwnModelAsData"></activity>
         
     </application>
 </manifest>

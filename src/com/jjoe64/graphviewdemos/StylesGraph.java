@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import com.jjoe64.graphview.BarGraphView;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
+import com.jjoe64.graphview.GraphViewDataInterface;
 import com.jjoe64.graphview.GraphViewSeries;
 import com.jjoe64.graphview.GraphViewSeries.GraphViewSeriesStyle;
 import com.jjoe64.graphview.LineGraphView;
@@ -82,9 +83,9 @@ public class StylesGraph extends Activity {
 		GraphViewSeriesStyle seriesStyle = new GraphViewSeriesStyle();
 		seriesStyle.setValueDependentColor(new ValueDependentColor() {
 			@Override
-			public int get(GraphViewData data) {
+			public int get(GraphViewDataInterface data) {
 				// the higher the more red
-				return Color.rgb((int)(150+((data.valueY/3)*100)), (int)(150-((data.valueY/3)*150)), (int)(150-((data.valueY/3)*150)));
+				return Color.rgb((int)(150+((data.getY()/3)*100)), (int)(150-((data.getY()/3)*150)), (int)(150-((data.getY()/3)*150)));
 			}
 		});
 		exampleSeries2 = new GraphViewSeries("aaa", seriesStyle, new GraphViewData[] {
