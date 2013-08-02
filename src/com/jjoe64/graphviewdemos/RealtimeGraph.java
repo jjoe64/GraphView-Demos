@@ -83,7 +83,7 @@ public class RealtimeGraph extends Activity {
 			((LineGraphView) graphView).setDrawBackground(true);
 		}
 		graphView.addSeries(exampleSeries2); // data
-		graphView.setViewPort(1, 4);
+		graphView.setViewPort(1, 8);
 		graphView.setScalable(true);
 
 		layout = (LinearLayout) findViewById(R.id.graph2);
@@ -120,8 +120,8 @@ public class RealtimeGraph extends Activity {
 			@Override
 			public void run() {
 				graph2LastXValue += 1d;
-				exampleSeries2.appendData(new GraphViewData(graph2LastXValue, getRandom()), true);
-				mHandler.postDelayed(this, 1000);
+				exampleSeries2.appendData(new GraphViewData(graph2LastXValue, getRandom()), true, 10);
+				mHandler.postDelayed(this, 200);
 			}
 		};
 		mHandler.postDelayed(mTimer2, 1000);
