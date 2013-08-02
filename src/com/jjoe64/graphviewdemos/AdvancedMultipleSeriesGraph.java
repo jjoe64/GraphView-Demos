@@ -32,11 +32,12 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 		GraphViewSeries seriesSin = new GraphViewSeries("Sinus curve", new GraphViewSeriesStyle(Color.rgb(200, 50, 00), 3), data);
 
 		// cos curve
+		num = 100;
 		data = new GraphViewData[num];
 		v=0;
-		for (int i=50; i<num-50; i++) {
+		for (int i=0; i<num; i++) {
 			v += 0.2;
-			data[i-50] = new GraphViewData(i, Math.cos(v));
+			data[i] = new GraphViewData(i+24, Math.cos(v));
 		}
 		GraphViewSeries seriesCos = new GraphViewSeries("Cosinus curve", new GraphViewSeriesStyle(Color.rgb(90, 250, 00), 3), data);
 
