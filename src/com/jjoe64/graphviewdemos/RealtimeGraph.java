@@ -1,6 +1,7 @@
 package com.jjoe64.graphviewdemos;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.LinearLayout;
@@ -19,6 +20,7 @@ public class RealtimeGraph extends Activity {
 	private GraphViewSeries exampleSeries1;
 	private GraphViewSeries exampleSeries2;
 	private double graph2LastXValue = 5d;
+	private GraphViewSeries exampleSeries3;
 
 	private double getRandom() {
 		double high = 3;
@@ -41,6 +43,8 @@ public class RealtimeGraph extends Activity {
 				, new GraphViewData(4, 1.0d)
 				, new GraphViewData(5, 3.0d)
 		});
+		exampleSeries3 = new GraphViewSeries(new GraphViewData[] {});
+		exampleSeries3.getStyle().color = Color.CYAN;
 
 		// graph with dynamically genereated horizontal and vertical labels
 		if (getIntent().getStringExtra("type").equals("bar")) {
@@ -55,6 +59,7 @@ public class RealtimeGraph extends Activity {
 			);
 		}
 		graphView.addSeries(exampleSeries1); // data
+		graphView.addSeries(exampleSeries3);
 
 		LinearLayout layout = (LinearLayout) findViewById(R.id.graph1);
 		layout.addView(graphView);
@@ -110,6 +115,12 @@ public class RealtimeGraph extends Activity {
 						, new GraphViewData(3, getRandom())
 						, new GraphViewData(4, getRandom())
 						, new GraphViewData(5, getRandom())
+				});
+				exampleSeries3.resetData(new GraphViewData[] {
+						new GraphViewData(2, getRandom())
+						, new GraphViewData(2.5, getRandom()) // another frequency
+						, new GraphViewData(3, getRandom())
+						, new GraphViewData(4, getRandom())
 				});
 				mHandler.postDelayed(this, 300);
 			}
