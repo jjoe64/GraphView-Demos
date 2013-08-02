@@ -72,6 +72,8 @@ public class AdvancedGraph extends Activity {
 		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
+		// set manual Y axis bounds
+		graphView.setManualYAxisBounds(2, -1);
 		layout = (LinearLayout) findViewById(R.id.graph2);
 		layout.addView(graphView);
 	}
