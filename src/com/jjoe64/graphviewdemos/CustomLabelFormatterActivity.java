@@ -88,6 +88,9 @@ public class CustomLabelFormatterActivity extends Activity {
 		}
 		graphView.addSeries(exampleSeries); // data
 
+		/*
+		 * date as label formatter
+		 */
 		final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM d");
 		graphView.setCustomLabelFormatter(new CustomLabelFormatter() {
 			@Override
