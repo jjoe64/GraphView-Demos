@@ -63,6 +63,12 @@ public class MainActivity extends Activity {
 				startGraphActivity(OwnModelAsData.class);
 			}
 		});
+		((Button) findViewById(R.id.btn_negativevalues)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startGraphActivity(NegativeValuesGraph.class);
+			}
+		});
 	}
 
 	private void startGraphActivity(Class<? extends Activity> activity) {

@@ -21,6 +21,7 @@
         <activity android:name="RemoveAddSeries"></activity>
         <activity android:name="CustomLabelFormatterActivity"></activity>
         <activity android:name="OwnModelAsData"></activity>
+        <activity android:name="NegativeValuesGraph"></activity>
         
     </application>
 </manifest>
