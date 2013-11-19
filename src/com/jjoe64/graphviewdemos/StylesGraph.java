@@ -2,6 +2,7 @@ package com.jjoe64.graphviewdemos;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Paint.Align;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.LinearLayout;
@@ -68,6 +69,7 @@ public class StylesGraph extends Activity {
 		graphView.getGraphViewStyle().setNumHorizontalLabels(5);
 		graphView.getGraphViewStyle().setNumVerticalLabels(4);
 		graphView.getGraphViewStyle().setVerticalLabelsWidth(300);
+		graphView.getGraphViewStyle().setVerticalLabelsAlign(Align.CENTER);
 
 		graphView.addSeries(exampleSeries); // data
 
