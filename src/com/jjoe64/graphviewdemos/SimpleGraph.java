@@ -35,6 +35,7 @@ public class SimpleGraph extends Activity {
 					this // context
 					, "GraphViewDemo" // heading
 			);
+			((BarGraphView) graphView).setDrawValuesOnTop(true);
 		} else {
 			graphView = new LineGraphView(
 					this // context
@@ -52,6 +53,7 @@ public class SimpleGraph extends Activity {
 					this
 					, "GraphViewDemo"
 			);
+			((BarGraphView) graphView).setDrawValuesOnTop(true);
 		} else {
 			graphView = new LineGraphView(
 					this
@@ -63,7 +65,15 @@ public class SimpleGraph extends Activity {
 		// custom static labels
 		graphView.setHorizontalLabels(new String[] {"2 days ago", "yesterday", "today", "tomorrow"});
 		graphView.setVerticalLabels(new String[] {"high", "middle", "low"});
-		graphView.addSeries(exampleSeries); // data
+
+		GraphViewSeries exampleSeries2 = new GraphViewSeries(new GraphViewData[] {
+				new GraphViewData(1, 2.0d)
+				, new GraphViewData(2, 1.5d)
+				, new GraphViewData(3, 2.5d)
+				, new GraphViewData(4, 1.0d)
+		});
+		graphView.setManualYAxisBounds(2.5d, 0d);
+		graphView.addSeries(exampleSeries2); // data
 
 		layout = (LinearLayout) findViewById(R.id.graph2);
 		layout.addView(graphView);
