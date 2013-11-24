@@ -59,6 +59,7 @@ public class StylesGraph extends Activity {
 					this // context
 					, "GraphViewDemo" // heading
 			);
+			((LineGraphView) graphView).setDrawDataPoints(true);
 		}
 
 		// set styles
