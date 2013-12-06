@@ -41,6 +41,8 @@ public class SimpleGraph extends Activity {
 					this // context
 					, "GraphViewDemo" // heading
 			);
+			((LineGraphView) graphView).setDrawDataPoints(true);
+			((LineGraphView) graphView).setDataPointsRadius(15f);
 		}
 		graphView.addSeries(exampleSeries); // data
 

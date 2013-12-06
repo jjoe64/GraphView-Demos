@@ -42,7 +42,7 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 		GraphViewSeries seriesCos = new GraphViewSeries("Cosinus curve", new GraphViewSeriesStyle(Color.rgb(90, 250, 00), 3), data);
 
 		// random curve
-		num = 1000;
+		num = 100;
 		data = new GraphViewData[num];
 		v=0;
 		for (int i=0; i<num; i++) {
@@ -77,10 +77,14 @@ public class AdvancedMultipleSeriesGraph extends Activity {
 		graphView.addSeries(seriesCos);
 		graphView.addSeries(seriesSin);
 		graphView.addSeries(seriesRnd);
+
 		// set legend
 		graphView.setShowLegend(true);
 		graphView.setLegendAlign(LegendAlign.BOTTOM);
-		graphView.setLegendWidth(200);
+		graphView.getGraphViewStyle().setLegendBorder(20);
+		graphView.getGraphViewStyle().setLegendSpacing(30);
+		graphView.getGraphViewStyle().setLegendWidth(300);
+
 		// set view port, start=2, size=10
 		graphView.setViewPort(2, 10);
 		graphView.setScalable(true);
