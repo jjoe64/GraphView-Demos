@@ -1,5 +1,7 @@
 package com.jjoe64.graphviewdemos;
 
+import com.jjoe64.graphviewdemos.dataselection.SampleSeriesDemoActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -68,6 +70,12 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				startGraphActivity(NegativeValuesGraph.class);
 			}
+		});
+		((Button) findViewById(R.id.btn_sampleSelection)).setOnClickListener(new OnClickListener() {
+		    @Override
+		    public void onClick(View v) {
+		        startGraphActivity(SampleSeriesDemoActivity.class);
+		    }
 		});
 	}
 
