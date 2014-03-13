@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jjoe64.graphviewdemos" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jjoe64.graphviewdemos.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SimpleGraph"></activity>
+        <activity android:name="AdvancedGraph"></activity>
+        <activity android:name="AdvancedMultipleSeriesGraph"></activity>
+        <activity android:name="RealtimeGraph"></activity>
+        <activity android:name="StylesGraph"></activity>
+        <activity android:name="RemoveAddSeries"></activity>
+        <activity android:name="CustomLabelFormatterActivity"></activity>
+        <activity android:name="OwnModelAsData"></activity>
+        <activity android:name="NegativeValuesGraph"></activity>
+    </application>
+
+</manifest>
