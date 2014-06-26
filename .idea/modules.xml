@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GraphView/GraphView.iml" filepath="$PROJECT_DIR$/GraphView/GraphView.iml" />
       <module fileurl="file://$PROJECT_DIR$/GraphView-Demos.iml" filepath="$PROJECT_DIR$/GraphView-Demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/graphviewdemos/graphviewdemos.iml" filepath="$PROJECT_DIR$/graphviewdemos/graphviewdemos.iml" />
     </modules>
