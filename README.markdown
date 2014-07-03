@@ -105,3 +105,6 @@ layout.addView(graphView);
 That's all about it for now.
 
 <a href="http://www.jjoe64.com/2011/07/chart-and-graph-library-for-android.html">http://www.jjoe64.com/2011/07/chart-and-graph-library-for-android.html</a>
+
+
+Revision Date : 3 July 2014
