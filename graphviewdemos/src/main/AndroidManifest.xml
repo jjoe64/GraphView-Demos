@@ -25,6 +25,7 @@
         <activity android:name="CustomLabelFormatterActivity"></activity>
         <activity android:name="OwnModelAsData"></activity>
         <activity android:name="NegativeValuesGraph"></activity>
+        <activity android:name="LabelsGraph"></activity>
     </application>
 
 </manifest>

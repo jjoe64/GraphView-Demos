@@ -58,5 +58,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_negativevalues"
             android:text="Negative Values" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_labels"
+            android:text="Labels" />
     </LinearLayout>
 </ScrollView>

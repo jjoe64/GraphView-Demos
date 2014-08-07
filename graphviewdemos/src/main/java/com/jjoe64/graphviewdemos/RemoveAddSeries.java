@@ -11,7 +11,9 @@ import android.widget.LinearLayout;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
+import com.jjoe64.graphview.GraphViewDataInterface;
 import com.jjoe64.graphview.GraphViewSeries;
+import com.jjoe64.graphview.GraphViewStyle;
 import com.jjoe64.graphview.LineGraphView;
 
 public class RemoveAddSeries extends Activity {
@@ -54,6 +56,7 @@ public class RemoveAddSeries extends Activity {
 
         // create GraphView
         graphView = new LineGraphView(this, "add remove series");
+        graphView.getGraphViewStyle().setGridStyle(GraphViewStyle.GridStyle.NONE);
         LinearLayout ll = (LinearLayout) findViewById(R.id.linearLayout);
         ll.addView(graphView);
     }
