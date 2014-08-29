@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GraphView/GraphView.iml" filepath="$PROJECT_DIR$/GraphView/GraphView.iml" />
       <module fileurl="file://$PROJECT_DIR$/GraphView-Demos.iml" filepath="$PROJECT_DIR$/GraphView-Demos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/graphviewdemos/graphviewdemos.iml" filepath="$PROJECT_DIR$/graphviewdemos/graphviewdemos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
