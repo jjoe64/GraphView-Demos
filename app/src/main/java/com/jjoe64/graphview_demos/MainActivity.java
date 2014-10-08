@@ -18,6 +18,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 
 
@@ -54,6 +55,8 @@ public class MainActivity extends ActionBarActivity
         Fragment fragment;
         if (sectionNumber == 0) {
             fragment = new SimpleLineGraph();
+        } else if (sectionNumber == 1) {
+            fragment = new ManualViewport();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -79,7 +82,7 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_simple);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.title_manual_viewport);
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);

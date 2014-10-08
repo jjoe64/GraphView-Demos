@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.Viewport;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview_demos.MainActivity;
@@ -16,7 +17,7 @@ import com.jjoe64.graphview_demos.R;
 /**
  * Created by jonas on 28.08.14.
  */
-public class SimpleLineGraph extends Fragment {
+public class ManualViewport extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -24,22 +25,23 @@ public class SimpleLineGraph extends Fragment {
 
         GraphView graph = (GraphView) rootView.findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 1),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
+                new DataPoint(0, 4),
+                new DataPoint(1, 9),
+                new DataPoint(2, 2),
+                //new DataPoint(3, 2),
                 new DataPoint(4, 6)
         });
         graph.addSeries(series);
 
-        LineGraphSeries<DataPoint> series2 = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 3),
-                new DataPoint(1, 3),
-                new DataPoint(2, 6),
-                new DataPoint(3, 2),
-                new DataPoint(4, 5)
-        });
-        graph.addSeries(series2);
+        // set manual X bounds
+        graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setMinX(0.5);
+        graph.getViewport().setMaxX(3.5);
+
+        // set manual Y bounds
+        graph.getViewport().setYAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setMinY(3.5);
+        graph.getViewport().setMaxY(8);
 
         return rootView;
     }
