@@ -24,19 +24,18 @@ public class Scrolling extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         GraphView graph = (GraphView) rootView.findViewById(R.id.graph);
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 4),
-                new DataPoint(1, 9),
-                new DataPoint(2, 2),
-                //new DataPoint(3, 2),
-                new DataPoint(4, 6)
-        });
+
+        DataPoint[] points = new DataPoint[50];
+        for (int i = 0; i < 50; i++) {
+            points[i] = new DataPoint(i, Math.sin(i*5) * 20);
+        }
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
         graph.addSeries(series);
 
         // set manual X bounds
         graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
-        graph.getViewport().setMinX(0.5);
-        graph.getViewport().setMaxX(3.5);
+        graph.getViewport().setMinX(0);
+        graph.getViewport().setMaxX(10);
 
         // enable scrolling
         graph.getViewport().setScrollable(true);
