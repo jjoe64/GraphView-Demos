@@ -27,7 +27,7 @@ public class Scrolling extends Fragment {
 
         DataPoint[] points = new DataPoint[50];
         for (int i = 0; i < 50; i++) {
-            points[i] = new DataPoint(i, Math.sin(i*5) * 20);
+            points[i] = new DataPoint(i, Math.sin(i*0.5) * 20*(Math.random()*10+1));
         }
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
         graph.addSeries(series);
@@ -35,7 +35,8 @@ public class Scrolling extends Fragment {
         // set manual X bounds
         graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
         graph.getViewport().setMinX(0);
-        graph.getViewport().setMaxX(10);
+        graph.getViewport().setMaxX(5);
+        graph.onDataChanged();
 
         // enable scrolling
         graph.getViewport().setScrollable(true);
