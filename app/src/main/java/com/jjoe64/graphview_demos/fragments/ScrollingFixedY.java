@@ -15,9 +15,9 @@ import com.jjoe64.graphview_demos.MainActivity;
 import com.jjoe64.graphview_demos.R;
 
 /**
- * Created by jonas on 16.10.14.
+ * Created by jonas on 21.10.14.
  */
-public class Scrolling extends Fragment {
+public class ScrollingFixedY extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,10 +32,16 @@ public class Scrolling extends Fragment {
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
         graph.addSeries(series);
 
+        // set manual Y bounds
+        graph.getViewport().setYAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setMinY(-200);
+        graph.getViewport().setMaxY(200);
+
         // set manual X bounds
         graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
         graph.getViewport().setMinX(0);
         graph.getViewport().setMaxX(5);
+        
         graph.onDataChanged();
 
         // enable scrolling

@@ -1,25 +1,17 @@
 package com.jjoe64.graphview_demos;
 
-import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
-import com.jjoe64.graphview_demos.fragments.Scrolling;
+import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
+import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 
 
@@ -59,7 +51,9 @@ public class MainActivity extends ActionBarActivity
         } else if (sectionNumber == 1) {
             fragment = new ManualViewport();
         } else if (sectionNumber == 2) {
-            fragment = new Scrolling();
+            fragment = new ScrollingAutoY();
+        } else if (sectionNumber == 3) {
+            fragment = new ScrollingFixedY();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -88,7 +82,10 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_manual_viewport);
                 break;
             case 3:
-                mTitle = getString(R.string.title_scrolling);
+                mTitle = getString(R.string.title_scrolling_1);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_scrolling_2);
                 break;
         }
     }
