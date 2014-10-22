@@ -106,6 +106,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_manual_viewport),
                         getString(R.string.title_scrolling_1),
                         getString(R.string.title_scrolling_2),
+                        getString(R.string.title_styling),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;

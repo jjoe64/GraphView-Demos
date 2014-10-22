@@ -13,6 +13,7 @@ import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
+import com.jjoe64.graphview_demos.fragments.Styling;
 
 
 public class MainActivity extends ActionBarActivity
@@ -54,6 +55,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new ScrollingAutoY();
         } else if (sectionNumber == 3) {
             fragment = new ScrollingFixedY();
+        } else if (sectionNumber == 4) {
+            fragment = new Styling();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -86,6 +89,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 4:
                 mTitle = getString(R.string.title_scrolling_2);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_styling);
                 break;
         }
     }
