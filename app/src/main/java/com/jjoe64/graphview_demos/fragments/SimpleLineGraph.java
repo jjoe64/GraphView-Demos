@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview_demos.MainActivity;
@@ -40,6 +41,12 @@ public class SimpleLineGraph extends Fragment {
                 new DataPoint(4, 5)
         });
         graph.addSeries(series2);
+
+        // legend
+        series.setTitle("foo");
+        series2.setTitle("bar");
+        graph.getLegendRenderer().setVisible(true);
+        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
 
         return rootView;
     }

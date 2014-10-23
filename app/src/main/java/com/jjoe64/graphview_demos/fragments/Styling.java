@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.Viewport;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -52,13 +53,22 @@ public class Styling extends Fragment {
         graph.getViewport().setBackgroundColor(Color.argb(255, 222, 222, 222));
 
         // styling series
+        series.setTitle("Random Curve 1");
         series.setColor(Color.GREEN);
         series.setDrawDataPoints(true);
         series.setDataPointsRadius(10);
-
+        series2.setTitle("Random Curve 2");
         series2.setThickness(8);
         series2.setDrawBackground(true);
         series2.setBackgroundColor(Color.argb(100, 255, 255, 0));
+
+        // styling legend
+        graph.getLegendRenderer().setVisible(true);
+        graph.getLegendRenderer().setTextSize(25);
+        graph.getLegendRenderer().setBackgroundColor(Color.argb(150, 50, 0, 0));
+        graph.getLegendRenderer().setTextColor(Color.WHITE);
+        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
+        graph.getLegendRenderer().setMargin(30);
 
         graph.addSeries(series);
         graph.addSeries(series2);
