@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
+import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 import com.jjoe64.graphview_demos.fragments.Styling;
 
@@ -57,6 +58,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new ScrollingFixedY();
         } else if (sectionNumber == 4) {
             fragment = new Styling();
+        } else if (sectionNumber == 5) {
+            fragment = new SimpleBarGraph();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -92,6 +95,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 5:
                 mTitle = getString(R.string.title_styling);
+                break;
+            case 6:
+                mTitle = getString(R.string.title_simple_bar);
                 break;
         }
     }
