@@ -15,6 +15,7 @@ import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
 import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 import com.jjoe64.graphview_demos.fragments.Styling;
+import com.jjoe64.graphview_demos.fragments.StylingBarGraph;
 
 
 public class MainActivity extends ActionBarActivity
@@ -60,6 +61,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new Styling();
         } else if (sectionNumber == 5) {
             fragment = new SimpleBarGraph();
+        } else if (sectionNumber == 6) {
+            fragment = new StylingBarGraph();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -98,6 +101,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 6:
                 mTitle = getString(R.string.title_simple_bar);
+                break;
+            case 7:
+                mTitle = getString(R.string.title_styling_bar);
                 break;
         }
     }
