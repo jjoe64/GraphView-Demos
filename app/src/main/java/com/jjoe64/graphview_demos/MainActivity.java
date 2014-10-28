@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
+import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
@@ -63,6 +64,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new SimpleBarGraph();
         } else if (sectionNumber == 6) {
             fragment = new StylingBarGraph();
+        } else if (sectionNumber == 7) {
+            fragment = new LineBarCombination();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -104,6 +107,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 7:
                 mTitle = getString(R.string.title_styling_bar);
+                break;
+            case 8:
+                mTitle = getString(R.string.title_line_bar_combination);
                 break;
         }
     }
