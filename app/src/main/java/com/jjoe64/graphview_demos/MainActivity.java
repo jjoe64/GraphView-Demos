@@ -17,6 +17,7 @@ import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 import com.jjoe64.graphview_demos.fragments.Styling;
 import com.jjoe64.graphview_demos.fragments.StylingBarGraph;
+import com.jjoe64.graphview_demos.fragments.Titles;
 
 
 public class MainActivity extends ActionBarActivity
@@ -66,6 +67,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new StylingBarGraph();
         } else if (sectionNumber == 7) {
             fragment = new LineBarCombination();
+        } else if (sectionNumber == 8) {
+            fragment = new Titles();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -110,6 +113,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 8:
                 mTitle = getString(R.string.title_line_bar_combination);
+                break;
+            case 9:
+                mTitle = getString(R.string.title_titles);
                 break;
         }
     }
