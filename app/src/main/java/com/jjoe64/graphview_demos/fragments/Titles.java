@@ -1,6 +1,7 @@
 package com.jjoe64.graphview_demos.fragments;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -38,6 +39,14 @@ public class Titles extends Fragment {
         graph.setTitle("Chart Title");
         graph.getGridLabelRenderer().setVerticalAxisTitle("Vertical Axis");
         graph.getGridLabelRenderer().setHorizontalAxisTitle("Horizontal Axis");
+
+        // optional styles
+        //graph.setTitleTextSize(40);
+        //graph.setTitleColor(Color.BLUE);
+        //graph.getGridLabelRenderer().setVerticalAxisTitleTextSize(40);
+        graph.getGridLabelRenderer().setVerticalAxisTitleColor(Color.BLUE);
+        //graph.getGridLabelRenderer().setHorizontalAxisTitleTextSize(40);
+        graph.getGridLabelRenderer().setHorizontalAxisTitleColor(Color.BLUE);
 
 
         return rootView;
