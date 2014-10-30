@@ -36,7 +36,7 @@ public class Titles extends Fragment {
 
         // titles
         graph.setTitle("Chart Title");
-        //graph.getGridLabelRenderer().setVerticalAxisTitle("Vertical Axis");
+        graph.getGridLabelRenderer().setVerticalAxisTitle("Vertical Axis");
         graph.getGridLabelRenderer().setHorizontalAxisTitle("Horizontal Axis");
 
 
