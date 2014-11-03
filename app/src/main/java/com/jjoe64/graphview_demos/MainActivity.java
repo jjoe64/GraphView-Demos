@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 
 import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
+import com.jjoe64.graphview_demos.fragments.Scaling;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
 import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
@@ -69,6 +70,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new LineBarCombination();
         } else if (sectionNumber == 8) {
             fragment = new Titles();
+        } else if (sectionNumber == 9) {
+            fragment = new Scaling();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -116,6 +119,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 9:
                 mTitle = getString(R.string.title_titles);
+                break;
+            case 10:
+                mTitle = getString(R.string.title_scaling);
                 break;
         }
     }
