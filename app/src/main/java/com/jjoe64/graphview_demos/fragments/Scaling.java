@@ -25,17 +25,17 @@ public class Scaling extends Fragment {
 
         GraphView graph = (GraphView) rootView.findViewById(R.id.graph);
 
-        DataPoint[] points = new DataPoint[50];
-        for (int i = 0; i < 50; i++) {
+        DataPoint[] points = new DataPoint[100];
+        for (int i = 0; i < points.length; i++) {
             points[i] = new DataPoint(i, Math.sin(i*0.5) * 20*(Math.random()*10+1));
         }
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
         graph.addSeries(series);
 
         // set manual X bounds
-        graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
-        graph.getViewport().setMinX(0);
-        graph.getViewport().setMaxX(5);
+        graph.getViewport().setXAxisBoundsManual(true);
+        graph.getViewport().setMinX(4);
+        graph.getViewport().setMaxX(8);
         graph.onDataChanged();
 
         // enable scaling

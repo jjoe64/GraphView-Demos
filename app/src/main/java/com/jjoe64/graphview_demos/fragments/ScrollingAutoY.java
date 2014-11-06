@@ -33,7 +33,7 @@ public class ScrollingAutoY extends Fragment {
         graph.addSeries(series);
 
         // set manual X bounds
-        graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(0);
         graph.getViewport().setMaxX(5);
         graph.onDataChanged();

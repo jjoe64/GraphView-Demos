@@ -33,12 +33,12 @@ public class ScrollingFixedY extends Fragment {
         graph.addSeries(series);
 
         // set manual Y bounds
-        graph.getViewport().setYAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setYAxisBoundsManual(true);
         graph.getViewport().setMinY(-200);
         graph.getViewport().setMaxY(200);
 
         // set manual X bounds
-        graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(0);
         graph.getViewport().setMaxX(5);
         

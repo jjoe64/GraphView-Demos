@@ -34,12 +34,12 @@ public class ManualViewport extends Fragment {
         graph.addSeries(series);
 
         // set manual X bounds
-        graph.getViewport().setXAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(0.5);
         graph.getViewport().setMaxX(3.5);
 
         // set manual Y bounds
-        graph.getViewport().setYAxisBoundsStatus(Viewport.AxisBoundsStatus.MANUAL);
+        graph.getViewport().setYAxisBoundsManual(true);
         graph.getViewport().setMinY(3.5);
         graph.getViewport().setMaxY(8);
 
