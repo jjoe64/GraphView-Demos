@@ -33,6 +33,10 @@ public class Scaling extends Fragment {
         graph.addSeries(series);
 
         // set manual X bounds
+        graph.getViewport().setYAxisBoundsManual(true);
+        graph.getViewport().setMinY(-200);
+        graph.getViewport().setMaxY(200);
+
         graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(4);
         graph.getViewport().setMaxX(8);
