@@ -14,6 +14,7 @@ import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.Scaling;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
+import com.jjoe64.graphview_demos.fragments.SecondYAxis;
 import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 import com.jjoe64.graphview_demos.fragments.Styling;
@@ -72,6 +73,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new Titles();
         } else if (sectionNumber == 9) {
             fragment = new Scaling();
+        } else if (sectionNumber == 10) {
+            fragment = new SecondYAxis();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -122,6 +125,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 10:
                 mTitle = getString(R.string.title_scaling);
+                break;
+            case 11:
+                mTitle = getString(R.string.title_second_y_axis);
                 break;
         }
     }

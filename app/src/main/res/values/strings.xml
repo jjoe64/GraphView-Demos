@@ -12,6 +12,7 @@
     <string name="title_line_bar_combination">Line and Bar Combination</string>
     <string name="title_titles">Titles</string>
     <string name="title_scaling">Scaling</string>
+    <string name="title_second_y_axis">Second Y Axis</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>

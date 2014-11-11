@@ -112,6 +112,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_line_bar_combination),
                         getString(R.string.title_titles),
                         getString(R.string.title_scaling),
+                        getString(R.string.title_second_y_axis),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
