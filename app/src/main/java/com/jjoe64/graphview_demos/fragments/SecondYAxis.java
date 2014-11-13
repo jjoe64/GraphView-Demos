@@ -1,6 +1,7 @@
 package com.jjoe64.graphview_demos.fragments;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -43,9 +44,11 @@ public class SecondYAxis extends Fragment {
 
         // set second scale
         graph.getSecondScale().addSeries(series2);
-        graph.getSecondScale().setYAxisBoundsManual(true);
+        // the y bounds are always manual for second scale
         graph.getSecondScale().setMinY(0);
         graph.getSecondScale().setMaxY(100);
+        series2.setColor(Color.RED);
+        graph.getGridLabelRenderer().setVerticalLabelsSecondScaleColor(Color.RED);
 
         // legend
         series.setTitle("foo");
