@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 
 import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
+import com.jjoe64.graphview_demos.fragments.PointsGraph;
 import com.jjoe64.graphview_demos.fragments.Scaling;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
@@ -75,6 +76,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new Scaling();
         } else if (sectionNumber == 10) {
             fragment = new SecondYAxis();
+        } else if (sectionNumber == 11) {
+            fragment = new PointsGraph();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -128,6 +131,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 11:
                 mTitle = getString(R.string.title_second_y_axis);
+                break;
+            case 12:
+                mTitle = getString(R.string.title_points_graph);
                 break;
         }
     }

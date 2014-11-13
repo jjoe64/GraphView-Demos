@@ -13,6 +13,7 @@
     <string name="title_titles">Titles</string>
     <string name="title_scaling">Scaling</string>
     <string name="title_second_y_axis">Second Y Axis</string>
+    <string name="title_points_graph">Points Graph</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
