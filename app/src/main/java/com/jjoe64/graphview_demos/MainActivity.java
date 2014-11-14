@@ -20,6 +20,7 @@ import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
 import com.jjoe64.graphview_demos.fragments.Styling;
 import com.jjoe64.graphview_demos.fragments.StylingBarGraph;
+import com.jjoe64.graphview_demos.fragments.TapOnSeries;
 import com.jjoe64.graphview_demos.fragments.Titles;
 
 
@@ -78,6 +79,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new SecondYAxis();
         } else if (sectionNumber == 11) {
             fragment = new PointsGraph();
+        } else if (sectionNumber == 12) {
+            fragment = new TapOnSeries();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -134,6 +137,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 12:
                 mTitle = getString(R.string.title_points_graph);
+                break;
+            case 13:
+                mTitle = getString(R.string.title_tap_on_series);
                 break;
         }
     }
