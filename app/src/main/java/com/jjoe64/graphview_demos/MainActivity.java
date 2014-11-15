@@ -102,43 +102,43 @@ public class MainActivity extends ActionBarActivity
 
     public void onSectionAttached(int number) {
         switch (number) {
-            case 1:
+            case 0:
                 mTitle = getString(R.string.title_simple);
                 break;
-            case 2:
+            case 1:
                 mTitle = getString(R.string.title_manual_viewport);
                 break;
-            case 3:
+            case 2:
                 mTitle = getString(R.string.title_scrolling_1);
                 break;
-            case 4:
+            case 3:
                 mTitle = getString(R.string.title_scrolling_2);
                 break;
-            case 5:
+            case 4:
                 mTitle = getString(R.string.title_styling);
                 break;
-            case 6:
+            case 5:
                 mTitle = getString(R.string.title_simple_bar);
                 break;
-            case 7:
+            case 6:
                 mTitle = getString(R.string.title_styling_bar);
                 break;
-            case 8:
+            case 7:
                 mTitle = getString(R.string.title_line_bar_combination);
                 break;
-            case 9:
+            case 8:
                 mTitle = getString(R.string.title_titles);
                 break;
-            case 10:
+            case 9:
                 mTitle = getString(R.string.title_scaling);
                 break;
-            case 11:
+            case 10:
                 mTitle = getString(R.string.title_second_y_axis);
                 break;
-            case 12:
+            case 11:
                 mTitle = getString(R.string.title_points_graph);
                 break;
-            case 13:
+            case 12:
                 mTitle = getString(R.string.title_tap_on_series);
                 break;
         }
