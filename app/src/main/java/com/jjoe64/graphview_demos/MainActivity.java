@@ -22,6 +22,7 @@ import com.jjoe64.graphview_demos.fragments.Styling;
 import com.jjoe64.graphview_demos.fragments.StylingBarGraph;
 import com.jjoe64.graphview_demos.fragments.TapOnSeries;
 import com.jjoe64.graphview_demos.fragments.Titles;
+import com.jjoe64.graphview_demos.fragments.XMLIntegration;
 
 
 public class MainActivity extends ActionBarActivity
@@ -81,6 +82,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new PointsGraph();
         } else if (sectionNumber == 12) {
             fragment = new TapOnSeries();
+        } else if (sectionNumber == 13) {
+            fragment = new XMLIntegration();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -140,6 +143,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 12:
                 mTitle = getString(R.string.title_tap_on_series);
+                break;
+            case 13:
+                mTitle = getString(R.string.title_xml_integration);
                 break;
         }
     }
