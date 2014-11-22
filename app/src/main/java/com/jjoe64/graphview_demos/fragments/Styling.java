@@ -2,6 +2,7 @@ package com.jjoe64.graphview_demos.fragments;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -34,9 +35,9 @@ public class Styling extends Fragment {
         }
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
 
-        points = new DataPoint[30];
-        for (int i = 0; i < 30; i++) {
-            points[i] = new DataPoint(i, Math.sin(i*0.5) * 20*(Math.random()*10+1));
+        points = new DataPoint[15];
+        for (int i = 0; i < 15; i++) {
+            points[i] = new DataPoint(i*2, Math.sin(i*0.5) * 20*(Math.random()*10+1));
         }
         LineGraphSeries<DataPoint> series2 = new LineGraphSeries<DataPoint>(points);
 
@@ -57,10 +58,16 @@ public class Styling extends Fragment {
         series.setColor(Color.GREEN);
         series.setDrawDataPoints(true);
         series.setDataPointsRadius(10);
+        series.setThickness(8);
+
         series2.setTitle("Random Curve 2");
-        series2.setThickness(8);
         series2.setDrawBackground(true);
         series2.setBackgroundColor(Color.argb(100, 255, 255, 0));
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(10);
+        paint.setPathEffect(new DashPathEffect(new float[]{8, 5}, 0));
+        series2.setCustomPaint(paint);
 
         // styling legend
         graph.getLegendRenderer().setVisible(true);
