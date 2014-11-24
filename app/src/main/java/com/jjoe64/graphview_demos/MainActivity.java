@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 
 import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
+import com.jjoe64.graphview_demos.fragments.NoLabels;
 import com.jjoe64.graphview_demos.fragments.PointsGraph;
 import com.jjoe64.graphview_demos.fragments.Scaling;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
@@ -84,6 +85,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new TapOnSeries();
         } else if (sectionNumber == 13) {
             fragment = new XMLIntegration();
+        } else if (sectionNumber == 14) {
+            fragment = new NoLabels();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -146,6 +149,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 13:
                 mTitle = getString(R.string.title_xml_integration);
+                break;
+            case 14:
+                mTitle = getString(R.string.title_no_labels);
                 break;
         }
     }
