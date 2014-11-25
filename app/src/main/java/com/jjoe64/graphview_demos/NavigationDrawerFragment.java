@@ -117,6 +117,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_tap_on_series),
                         getString(R.string.title_xml_integration),
                         getString(R.string.title_no_labels),
+                        getString(R.string.title_dates_xaxis),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;

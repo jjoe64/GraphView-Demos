@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
+import com.jjoe64.graphview_demos.fragments.DateAsXAxis;
 import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.NoLabels;
@@ -87,6 +88,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new XMLIntegration();
         } else if (sectionNumber == 14) {
             fragment = new NoLabels();
+        } else if (sectionNumber == 15) {
+            fragment = new DateAsXAxis();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -152,6 +155,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 14:
                 mTitle = getString(R.string.title_no_labels);
+                break;
+            case 15:
+                mTitle = getString(R.string.title_dates_xaxis);
                 break;
         }
     }

@@ -17,6 +17,7 @@
     <string name="title_tap_on_series">Tap on Series</string>
     <string name="title_xml_integration">XML Integration</string>
     <string name="title_no_labels">No Labels</string>
+    <string name="title_dates_xaxis">Dates as X Axis</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
