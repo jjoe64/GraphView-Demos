@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
+import com.jjoe64.graphview_demos.fragments.AddSeriesAtRuntime;
 import com.jjoe64.graphview_demos.fragments.CustomLabelFormatter;
 import com.jjoe64.graphview_demos.fragments.DateAsXAxis;
 import com.jjoe64.graphview_demos.fragments.LineBarCombination;
@@ -93,6 +94,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new DateAsXAxis();
         } else if (sectionNumber == 16) {
             fragment = new CustomLabelFormatter();
+        } else if (sectionNumber == 17) {
+            fragment = new AddSeriesAtRuntime();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -164,6 +167,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 16:
                 mTitle = getString(R.string.title_custom_label_formatter);
+                break;
+            case 17:
+                mTitle = getString(R.string.title_add_series);
                 break;
         }
     }
