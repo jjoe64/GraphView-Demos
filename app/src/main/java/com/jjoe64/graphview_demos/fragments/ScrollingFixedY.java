@@ -42,7 +42,7 @@ public class ScrollingFixedY extends Fragment {
         graph.getViewport().setMinX(0);
         graph.getViewport().setMaxX(5);
         
-        graph.onDataChanged();
+        graph.onDataChanged(false, false);
 
         // enable scrolling
         graph.getViewport().setScrollable(true);

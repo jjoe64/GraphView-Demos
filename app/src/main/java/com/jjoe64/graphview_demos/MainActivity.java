@@ -16,6 +16,7 @@ import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
 import com.jjoe64.graphview_demos.fragments.NoLabels;
 import com.jjoe64.graphview_demos.fragments.PointsGraph;
+import com.jjoe64.graphview_demos.fragments.RealtimeUpdates;
 import com.jjoe64.graphview_demos.fragments.Scaling;
 import com.jjoe64.graphview_demos.fragments.ScrollingAutoY;
 import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
@@ -96,6 +97,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new CustomLabelFormatter();
         } else if (sectionNumber == 17) {
             fragment = new AddSeriesAtRuntime();
+        } else if (sectionNumber == 18) {
+            fragment = new RealtimeUpdates();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -170,6 +173,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 17:
                 mTitle = getString(R.string.title_add_series);
+                break;
+            case 18:
+                mTitle = getString(R.string.title_realtime_updates);
                 break;
         }
     }

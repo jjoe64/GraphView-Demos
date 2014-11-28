@@ -36,7 +36,7 @@ public class ScrollingAutoY extends Fragment {
         graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(0);
         graph.getViewport().setMaxX(5);
-        graph.onDataChanged();
+        graph.onDataChanged(false, false);
 
         // enable scrolling
         graph.getViewport().setScrollable(true);
