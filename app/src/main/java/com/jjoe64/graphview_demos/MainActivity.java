@@ -48,6 +48,7 @@ import com.jjoe64.graphview_demos.fragments.ScrollingFixedY;
 import com.jjoe64.graphview_demos.fragments.SecondYAxis;
 import com.jjoe64.graphview_demos.fragments.SimpleBarGraph;
 import com.jjoe64.graphview_demos.fragments.SimpleLineGraph;
+import com.jjoe64.graphview_demos.fragments.StaticLabels;
 import com.jjoe64.graphview_demos.fragments.Styling;
 import com.jjoe64.graphview_demos.fragments.StylingBarGraph;
 import com.jjoe64.graphview_demos.fragments.TapOnSeries;
@@ -124,6 +125,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new AddSeriesAtRuntime();
         } else if (sectionNumber == 18) {
             fragment = new RealtimeUpdates();
+        } else if (sectionNumber == 19) {
+            fragment = new StaticLabels();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -201,6 +204,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 18:
                 mTitle = getString(R.string.title_realtime_updates);
+                break;
+            case 19:
+                mTitle = getString(R.string.title_static_labels);
                 break;
         }
     }

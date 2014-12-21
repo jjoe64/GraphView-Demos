@@ -21,6 +21,7 @@
     <string name="title_custom_label_formatter">Custom Label Formatter</string>
     <string name="title_add_series">Add series at runtime</string>
     <string name="title_realtime_updates">Realtime Updates</string>
+    <string name="title_static_labels">Static Labels</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
