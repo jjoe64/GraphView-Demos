@@ -36,6 +36,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.GridLabelRenderer;
 import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.Viewport;
 import com.jjoe64.graphview.series.DataPoint;
@@ -73,6 +74,7 @@ public class Styling extends Fragment {
         graph.getGridLabelRenderer().setVerticalLabelsColor(Color.RED);
         graph.getGridLabelRenderer().setVerticalLabelsAlign(Paint.Align.LEFT);
         graph.getGridLabelRenderer().setTextSize(40);
+        graph.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.HORIZONTAL);
         graph.getGridLabelRenderer().reloadStyles();
 
         // styling viewport
