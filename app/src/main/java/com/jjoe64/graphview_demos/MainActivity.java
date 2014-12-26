@@ -25,6 +25,8 @@
  */
 package com.jjoe64.graphview_demos;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -69,6 +71,7 @@ public class MainActivity extends ActionBarActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+    private String codeUrl = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,63 +153,83 @@ public class MainActivity extends ActionBarActivity
         switch (number) {
             case 0:
                 mTitle = getString(R.string.title_simple);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/SimpleLineGraph.java";
                 break;
             case 1:
                 mTitle = getString(R.string.title_manual_viewport);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/ManualViewport.java";
                 break;
             case 2:
                 mTitle = getString(R.string.title_scrolling_1);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/ScrollingAutoY.java";
                 break;
             case 3:
                 mTitle = getString(R.string.title_scrolling_2);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/ScrollingFixedY.java";
                 break;
             case 4:
                 mTitle = getString(R.string.title_styling);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/Styling.java";
                 break;
             case 5:
                 mTitle = getString(R.string.title_simple_bar);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/SimpleBarGraph.java";
                 break;
             case 6:
                 mTitle = getString(R.string.title_styling_bar);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/StylingBarGraph.java";
                 break;
             case 7:
                 mTitle = getString(R.string.title_line_bar_combination);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/LineBarCombination.java";
                 break;
             case 8:
                 mTitle = getString(R.string.title_titles);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/Titles.java";
                 break;
             case 9:
                 mTitle = getString(R.string.title_scaling);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/Scaling.java";
                 break;
             case 10:
                 mTitle = getString(R.string.title_second_y_axis);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/SecondYAxis.java";
                 break;
             case 11:
                 mTitle = getString(R.string.title_points_graph);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/PointsGraph.java";
                 break;
             case 12:
                 mTitle = getString(R.string.title_tap_on_series);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/TapOnSeries.java";
                 break;
             case 13:
                 mTitle = getString(R.string.title_xml_integration);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/XMLIntegration.java";
                 break;
             case 14:
                 mTitle = getString(R.string.title_no_labels);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/NoLabels.java";
                 break;
             case 15:
                 mTitle = getString(R.string.title_dates_xaxis);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/DateAsXAxis.java";
                 break;
             case 16:
                 mTitle = getString(R.string.title_custom_label_formatter);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/CustomLabelFormatter.java";
                 break;
             case 17:
                 mTitle = getString(R.string.title_add_series);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/AddSeriesAtRuntime.java";
                 break;
             case 18:
                 mTitle = getString(R.string.title_realtime_updates);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/RealtimeUpdates.java";
                 break;
             case 19:
                 mTitle = getString(R.string.title_static_labels);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/StaticLabels.java";
                 break;
         }
     }
@@ -238,7 +261,10 @@ public class MainActivity extends ActionBarActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_show_code) {
+            Intent i = new Intent("android.intent.action.VIEW");
+            i.setData(Uri.parse(codeUrl));
+            startActivity(i);
             return true;
         }
         return super.onOptionsItemSelected(item);
