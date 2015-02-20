@@ -73,6 +73,7 @@ public class Styling extends Fragment {
         graph.getGridLabelRenderer().setHorizontalLabelsColor(Color.GREEN);
         graph.getGridLabelRenderer().setVerticalLabelsColor(Color.RED);
         graph.getGridLabelRenderer().setVerticalLabelsAlign(Paint.Align.LEFT);
+        graph.getGridLabelRenderer().setLabelVerticalWidth(150);
         graph.getGridLabelRenderer().setTextSize(40);
         graph.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.HORIZONTAL);
         graph.getGridLabelRenderer().reloadStyles();
@@ -101,8 +102,9 @@ public class Styling extends Fragment {
         graph.getLegendRenderer().setTextSize(25);
         graph.getLegendRenderer().setBackgroundColor(Color.argb(150, 50, 0, 0));
         graph.getLegendRenderer().setTextColor(Color.WHITE);
-        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
-        graph.getLegendRenderer().setMargin(30);
+        //graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
+        //graph.getLegendRenderer().setMargin(30);
+        graph.getLegendRenderer().setFixedPosition(150, 0);
 
         graph.addSeries(series);
         graph.addSeries(series2);
