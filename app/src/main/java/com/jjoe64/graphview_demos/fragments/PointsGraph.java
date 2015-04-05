@@ -39,6 +39,7 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.series.BarGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.DataPointInterface;
 import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview.series.PointsGraphSeries;
 import com.jjoe64.graphview_demos.MainActivity;
@@ -97,7 +98,7 @@ public class PointsGraph extends Fragment {
         series4.setColor(Color.GREEN);
         series4.setCustomShape(new PointsGraphSeries.CustomShape() {
             @Override
-            public void draw(Canvas canvas, Paint paint, float x, float y) {
+            public void draw(Canvas canvas, Paint paint, float x, float y, DataPointInterface dataPoint) {
                 paint.setStrokeWidth(10);
                 canvas.drawLine(x-20, y-20, x+20, y+20, paint);
                 canvas.drawLine(x+20, y-20, x-20, y+20, paint);
