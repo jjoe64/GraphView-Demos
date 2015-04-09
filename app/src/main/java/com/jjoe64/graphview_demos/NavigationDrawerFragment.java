@@ -147,6 +147,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_add_series),
                         getString(R.string.title_realtime_updates),
                         getString(R.string.title_static_labels),
+                        getString(R.string.title_multiple_bars),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;

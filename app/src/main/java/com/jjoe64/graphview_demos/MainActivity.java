@@ -41,6 +41,7 @@ import com.jjoe64.graphview_demos.fragments.CustomLabelFormatter;
 import com.jjoe64.graphview_demos.fragments.DateAsXAxis;
 import com.jjoe64.graphview_demos.fragments.LineBarCombination;
 import com.jjoe64.graphview_demos.fragments.ManualViewport;
+import com.jjoe64.graphview_demos.fragments.MultipleBarsGraph;
 import com.jjoe64.graphview_demos.fragments.NoLabels;
 import com.jjoe64.graphview_demos.fragments.PointsGraph;
 import com.jjoe64.graphview_demos.fragments.RealtimeUpdates;
@@ -130,6 +131,8 @@ public class MainActivity extends ActionBarActivity
             fragment = new RealtimeUpdates();
         } else if (sectionNumber == 19) {
             fragment = new StaticLabels();
+        } else if (sectionNumber == 20) {
+            fragment = new MultipleBarsGraph();
         } else {
             throw new IllegalStateException("unknown section "+sectionNumber);
         }
@@ -230,6 +233,10 @@ public class MainActivity extends ActionBarActivity
             case 19:
                 mTitle = getString(R.string.title_static_labels);
                 codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/StaticLabels.java";
+                break;
+            case 20:
+                mTitle = getString(R.string.title_multiple_bars);
+                codeUrl = "http://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/fragments/MultipleBarsGraph.java";
                 break;
         }
     }
