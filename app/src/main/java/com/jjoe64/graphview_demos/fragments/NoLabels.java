@@ -71,6 +71,8 @@ public class NoLabels extends Fragment {
         graph.getGridLabelRenderer().setVerticalLabelsVisible(false);
         graph.getGridLabelRenderer().setHorizontalLabelsVisible(false);
         graph.setTitle(null); // this is default
+        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.BOTTOM);
+        graph.getLegendRenderer().setVisible(true);
 
         return rootView;
     }

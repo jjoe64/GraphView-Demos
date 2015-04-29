@@ -65,7 +65,6 @@ public class Scaling extends Fragment {
         graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(4);
         graph.getViewport().setMaxX(8);
-        graph.onDataChanged(false, false);
 
         // enable scaling
         graph.getViewport().setScalable(true);

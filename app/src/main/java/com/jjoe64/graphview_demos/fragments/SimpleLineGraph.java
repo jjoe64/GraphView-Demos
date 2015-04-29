@@ -71,7 +71,7 @@ public class SimpleLineGraph extends Fragment {
         series.setTitle("foo");
         series2.setTitle("bar");
         graph.getLegendRenderer().setVisible(true);
-        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
+        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.BOTTOM);
 
         return rootView;
     }
