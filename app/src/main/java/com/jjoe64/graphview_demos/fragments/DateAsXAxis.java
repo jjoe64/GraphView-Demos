@@ -80,6 +80,10 @@ public class DateAsXAxis extends Fragment {
         graph.getViewport().setMaxX(d3.getTime());
         graph.getViewport().setXAxisBoundsManual(true);
 
+        // as we use dates as labels, the human rounding to nice readable numbers
+        // is not nessecary
+        graph.getGridLabelRenderer().setHumanRounding(false);
+
         return rootView;
     }
 

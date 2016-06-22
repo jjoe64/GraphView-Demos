@@ -20,7 +20,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile files('libs/GraphView-4.0.1-michael.jar')
     compile 'com.android.support:appcompat-v7:22.0.0'
-    //compile project(':GraphView')
-    compile 'com.jjoe64:graphview:4.0.1'
+    compile project(':GraphView')
+    //compile 'com.jjoe64:graphview:4.0.1'
 }

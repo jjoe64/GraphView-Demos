@@ -77,9 +77,13 @@ public class Styling extends Fragment {
         graph.getGridLabelRenderer().setTextSize(40);
         graph.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.HORIZONTAL);
         graph.getGridLabelRenderer().reloadStyles();
+        graph.getGridLabelRenderer().setHorizontalLabelsAngle(120);
+
 
         // styling viewport
         graph.getViewport().setBackgroundColor(Color.argb(255, 222, 222, 222));
+        graph.getViewport().setDrawBorder(true);
+        graph.getViewport().setBorderColor(Color.BLUE);
 
         // styling series
         series.setTitle("Random Curve 1");
