@@ -3,7 +3,8 @@ package com.jjoe64.graphview_demos;
 import android.support.annotation.DrawableRes;
 import android.support.v4.app.Fragment;
 
-import com.jjoe64.graphview_demos.fragments.HelloWorldFragment;
+import com.jjoe64.graphview_demos.categories.HelloWorldFragment;
+import com.jjoe64.graphview_demos.categories.ZoomingAndScrollingFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,7 +29,7 @@ public class MenuContent {
 
     static {
         addItem(new MenuItem("1", "Hello world graph", HelloWorldFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("2", "Zooming and scrolling", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("2", "Zooming and scrolling", ZoomingAndScrollingFragment.class, R.drawable.welcome));
         addItem(new MenuItem("3", "Realtime plotting", HelloWorldFragment.class, R.drawable.welcome));
         addItem(new MenuItem("4", "Time and dates", HelloWorldFragment.class, R.drawable.welcome));
         addItem(new MenuItem("5", "Simple examples", HelloWorldFragment.class, R.drawable.welcome));

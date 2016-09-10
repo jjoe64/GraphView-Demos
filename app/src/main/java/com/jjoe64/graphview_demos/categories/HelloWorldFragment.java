@@ -1,16 +1,11 @@
-package com.jjoe64.graphview_demos.fragments;
+package com.jjoe64.graphview_demos.categories;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.series.BarGraphSeries;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview_demos.FullscreenExample;
 import com.jjoe64.graphview_demos.ItemDetailFragment;
 import com.jjoe64.graphview_demos.R;
