@@ -19,7 +19,7 @@ import com.jjoe64.graphview_demos.examples.HelloWorld;
 /**
  * Created by jonas on 07.09.16.
  */
-public class HelloWorldGraph extends ItemDetailFragment {
+public class HelloWorldFragment extends ItemDetailFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

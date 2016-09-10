@@ -3,7 +3,7 @@ package com.jjoe64.graphview_demos;
 import android.support.annotation.DrawableRes;
 import android.support.v4.app.Fragment;
 
-import com.jjoe64.graphview_demos.fragments.HelloWorldGraph;
+import com.jjoe64.graphview_demos.fragments.HelloWorldFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,16 +27,16 @@ public class MenuContent {
     public static final Map<String, MenuItem> ITEM_MAP = new HashMap<String, MenuItem>();
 
     static {
-        addItem(new MenuItem("1", "Hello world graph", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("2", "Zooming and scrolling", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("3", "Realtime plotting", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("4", "Time and dates", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("5", "Simple examples", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("6", "Line graph", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("7", "Bar graph", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("8", "Point graph", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("9", "On tap listener", HelloWorldGraph.class, R.drawable.welcome));
-        addItem(new MenuItem("10", "Styling examples", HelloWorldGraph.class, R.drawable.welcome));
+        addItem(new MenuItem("1", "Hello world graph", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("2", "Zooming and scrolling", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("3", "Realtime plotting", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("4", "Time and dates", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("5", "Simple examples", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("6", "Line graph", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("7", "Bar graph", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("8", "Point graph", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("9", "On tap listener", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("10", "Styling examples", HelloWorldFragment.class, R.drawable.welcome));
     }
 
     private static void addItem(MenuItem item) {
