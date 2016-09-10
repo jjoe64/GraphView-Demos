@@ -22,7 +22,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */
+ * /
 package com.jjoe64.graphview_demos.fragments;
 
 import android.app.Activity;
@@ -43,7 +43,7 @@ import java.util.Random;
 
 /**
  * Created by jonas on 28.11.14.
- */
+ * /
 public class RealtimeUpdates extends Fragment {
     private final Handler mHandler = new Handler();
     private Runnable mTimer1;
@@ -127,3 +127,4 @@ public class RealtimeUpdates extends Fragment {
         return mLastRandom += mRand.nextDouble()*0.5 - 0.25;
     }
 }
+*/

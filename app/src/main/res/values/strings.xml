@@ -1,31 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">GraphView-Demos</string>
-    <string name="title_simple">Simple</string>
-    <string name="title_manual_viewport">Manual Viewport</string>
-    <string name="title_scrolling_1">Scrolling Auto Y</string>
-    <string name="title_scrolling_2">Scrolling Fixed Y</string>
-    <string name="title_styling">Styling</string>
-    <string name="title_simple_bar">Simple Bar Graph</string>
-    <string name="title_multiple_bars">Multiple Bars Graph</string>
-    <string name="title_styling_bar">Styling Bar Graph</string>
-    <string name="title_line_bar_combination">Line and Bar Combination</string>
-    <string name="title_titles">Titles</string>
-    <string name="title_scaling">Scaling</string>
-    <string name="title_second_y_axis">Second Y Axis</string>
-    <string name="title_points_graph">Points Graph</string>
-    <string name="title_tap_on_series">Tap on Series</string>
-    <string name="title_xml_integration">XML Integration</string>
-    <string name="title_no_labels">No Labels</string>
-    <string name="title_dates_xaxis">Dates as X Axis</string>
-    <string name="title_custom_label_formatter">Custom Label Formatter</string>
-    <string name="title_add_series">Add series at runtime</string>
-    <string name="title_realtime_updates">Realtime Updates</string>
-    <string name="title_static_labels">Static Labels</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_show_code">Show code</string>
-    <string name="action_settings">Settings</string>
-
+    <string name="title_item_detail">Item Detail</string>
 </resources>

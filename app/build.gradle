@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.0"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         applicationId "com.jjoe64.graphview_demos"
-        minSdkVersion 10
+        minSdkVersion 9
         targetSdkVersion 22
         versionCode 2
         versionName "1.0.1"
@@ -20,8 +20,13 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    //compile files('libs/GraphView-4.0.1-michael.jar')
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:cardview-v7:24.0.+'
+    compile 'com.android.support:recyclerview-v7:24.0.+'
+    compile 'com.android.support:design:24.2.0'
+
+    // graphview
     compile project(':GraphView')
-    //compile 'com.jjoe64:graphview:4.0.1'
+    //compile 'com.jjoe64:graphview:4.2.0'
 }

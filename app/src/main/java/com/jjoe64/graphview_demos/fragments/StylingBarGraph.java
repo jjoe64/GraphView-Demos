@@ -22,7 +22,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */
+ * /
 package com.jjoe64.graphview_demos.fragments;
 
 import android.app.Activity;
@@ -43,7 +43,7 @@ import com.jjoe64.graphview_demos.R;
 
 /**
  * Created by jonas on 28.08.14.
- */
+ * /
 public class StylingBarGraph extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -91,3 +91,4 @@ public class StylingBarGraph extends Fragment {
     }
 
 }
+*/

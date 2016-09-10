@@ -1,3 +1,4 @@
+/*
 package com.jjoe64.graphview_demos.fragments;
 
 import android.app.Activity;
@@ -17,7 +18,7 @@ import com.jjoe64.graphview_demos.R;
 
 /**
  * Created by jonas on 21.12.14.
- */
+ * /
 public class StaticLabels extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,3 +52,4 @@ public class StaticLabels extends Fragment {
     }
 
 }
+*/
