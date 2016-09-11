@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.jjoe64.graphview_demos.examples.BaseExample;
+
 /**
  * A fragment representing a single Item detail screen.
  * This fragment is either contained in a {@link ItemListActivity}
