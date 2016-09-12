@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cardSimpleLineGraph"
-        card_view:cardBackgroundColor="@android:color/white"
-        card_view:cardElevation="2sp"
-        card_view:cardUseCompatPadding="true">
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -53,9 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cardAdvancedLineGraph"
-        card_view:cardBackgroundColor="@android:color/white"
-        card_view:cardElevation="2sp"
-        card_view:cardUseCompatPadding="true">
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -85,6 +85,50 @@
                 android:layout_below="@+id/title2"
                 android:maxLines="3"
                 android:text="With some more options"
+                android:textColor="#666"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <com.jjoe64.graphview.helper.GraphViewXML
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/graph3"
+                app:seriesType="line"
+                app:seriesData="0=5.0;1=0;2=4;4=5" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/graph3"
+                android:maxLines="3"
+                android:layout_marginTop="8dp"
+                android:text="Simple graph via XML"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title3"
+                android:maxLines="3"
+                android:text="Line graph defined directly in layout XML"
                 android:textColor="#666"
                 android:textSize="14dp" />
 

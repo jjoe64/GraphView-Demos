@@ -24,6 +24,7 @@ import com.jjoe64.graphview_demos.examples.StaticLabelsGraph;
 import com.jjoe64.graphview_demos.examples.StylingColors;
 import com.jjoe64.graphview_demos.examples.StylingLabels;
 import com.jjoe64.graphview_demos.examples.TapListenerGraph;
+import com.jjoe64.graphview_demos.examples.TitlesExample;
 
 /**
  * Created by jonas on 10.09.16.
@@ -49,7 +50,8 @@ public enum FullscreenExample {
     TAP_LISTENER(R.layout.fullscreen_example_simple, TapListenerGraph.class),
     STYLING_LABELS(R.layout.fullscreen_example_simple, StylingLabels.class),
     STYLING_COLORS(R.layout.fullscreen_example_simple, StylingColors.class),
-    ADD_SERIES(R.layout.fullscreen_example_add_series, AddSeriesAtRuntime.class);
+    ADD_SERIES(R.layout.fullscreen_example_add_series, AddSeriesAtRuntime.class),
+    TITLES_EXAMPLE(R.layout.fullscreen_example_simple, TitlesExample.class);
 
     public static final String ARG_ID = "FEID";
 

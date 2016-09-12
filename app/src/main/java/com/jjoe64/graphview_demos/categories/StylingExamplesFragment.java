@@ -11,6 +11,7 @@ import com.jjoe64.graphview_demos.ItemDetailFragment;
 import com.jjoe64.graphview_demos.R;
 import com.jjoe64.graphview_demos.examples.StylingColors;
 import com.jjoe64.graphview_demos.examples.StylingLabels;
+import com.jjoe64.graphview_demos.examples.TitlesExample;
 
 /**
  * Created by jonas on 07.09.16.
@@ -36,6 +37,15 @@ public class StylingExamplesFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.STYLING_COLORS);
+            }
+        });
+
+        graph = (GraphView) rootView.findViewById(R.id.graph3);
+        new TitlesExample().initGraph(graph);
+        rootView.findViewById(R.id.cardTitlesGraph).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.TITLES_EXAMPLE);
             }
         });
 
