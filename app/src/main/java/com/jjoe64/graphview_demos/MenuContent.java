@@ -9,6 +9,8 @@ import com.jjoe64.graphview_demos.categories.PointsGraphFragment;
 import com.jjoe64.graphview_demos.categories.RealtimeFragment;
 import com.jjoe64.graphview_demos.categories.LineGraphFragment;
 import com.jjoe64.graphview_demos.categories.SecondScaleAndLabelsFragment;
+import com.jjoe64.graphview_demos.categories.StylingExamplesFragment;
+import com.jjoe64.graphview_demos.categories.TapListenerGraphFragment;
 import com.jjoe64.graphview_demos.categories.TimeAndDatesFragment;
 import com.jjoe64.graphview_demos.categories.ZoomingAndScrollingFragment;
 
@@ -42,8 +44,8 @@ public class MenuContent {
         addItem(new MenuItem("6", "Line graph", LineGraphFragment.class, R.drawable.welcome));
         addItem(new MenuItem("7", "Bar graph", BarGraphFragment.class, R.drawable.welcome));
         addItem(new MenuItem("8", "Points graph", PointsGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("9", "On tap listener", HelloWorldFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("10", "Styling examples", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("9", "On tap listener", TapListenerGraphFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("10", "Styling examples", StylingExamplesFragment.class, R.drawable.welcome));
     }
 
     private static void addItem(MenuItem item) {

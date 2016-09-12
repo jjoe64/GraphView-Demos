@@ -20,6 +20,9 @@ import com.jjoe64.graphview_demos.examples.SimpleBarGraph;
 import com.jjoe64.graphview_demos.examples.SimpleLineGraph;
 import com.jjoe64.graphview_demos.examples.SimplePointsGraph;
 import com.jjoe64.graphview_demos.examples.StaticLabelsGraph;
+import com.jjoe64.graphview_demos.examples.StylingColors;
+import com.jjoe64.graphview_demos.examples.StylingLabels;
+import com.jjoe64.graphview_demos.examples.TapListenerGraph;
 
 /**
  * Created by jonas on 10.09.16.
@@ -41,7 +44,10 @@ public enum FullscreenExample {
     SECOND_SCALE_GRAPH(R.layout.fullscreen_example_simple, SecondScaleGraph.class),
     CUSTOM_LABELS(R.layout.fullscreen_example_simple, CustomLabelsGraph.class),
     NO_LABELS(R.layout.fullscreen_example_simple, NoLabelsGraph.class),
-    STATIC_LABELS(R.layout.fullscreen_example_simple, StaticLabelsGraph.class);
+    STATIC_LABELS(R.layout.fullscreen_example_simple, StaticLabelsGraph.class),
+    TAP_LISTENER(R.layout.fullscreen_example_simple, TapListenerGraph.class),
+    STYLING_LABELS(R.layout.fullscreen_example_simple, StylingLabels.class),
+    STYLING_COLORS(R.layout.fullscreen_example_simple, StylingColors.class);
 
     public static final String ARG_ID = "FEID";
 
