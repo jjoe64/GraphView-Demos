@@ -3,6 +3,7 @@ package com.jjoe64.graphview_demos;
 import android.support.annotation.DrawableRes;
 import android.support.v4.app.Fragment;
 
+import com.jjoe64.graphview_demos.categories.BarGraphFragment;
 import com.jjoe64.graphview_demos.categories.HelloWorldFragment;
 import com.jjoe64.graphview_demos.categories.RealtimeFragment;
 import com.jjoe64.graphview_demos.categories.LineGraphFragment;
@@ -37,7 +38,7 @@ public class MenuContent {
         addItem(new MenuItem("4", "Time and dates", TimeAndDatesFragment.class, R.drawable.welcome));
         addItem(new MenuItem("5", "Second scale and custom labels", LineGraphFragment.class, R.drawable.welcome));
         addItem(new MenuItem("6", "Line graph", LineGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("7", "Bar graph", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("7", "Bar graph", BarGraphFragment.class, R.drawable.welcome));
         addItem(new MenuItem("8", "Point graph", HelloWorldFragment.class, R.drawable.welcome));
         addItem(new MenuItem("9", "On tap listener", HelloWorldFragment.class, R.drawable.welcome));
         addItem(new MenuItem("10", "Styling examples", HelloWorldFragment.class, R.drawable.welcome));
