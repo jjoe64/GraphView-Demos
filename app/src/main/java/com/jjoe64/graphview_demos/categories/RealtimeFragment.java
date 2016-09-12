@@ -9,6 +9,7 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview_demos.FullscreenExample;
 import com.jjoe64.graphview_demos.ItemDetailFragment;
 import com.jjoe64.graphview_demos.R;
+import com.jjoe64.graphview_demos.examples.AddSeriesAtRuntime;
 import com.jjoe64.graphview_demos.examples.BaseExample;
 import com.jjoe64.graphview_demos.examples.FixedFrame;
 import com.jjoe64.graphview_demos.examples.RealtimeScrolling;
@@ -47,6 +48,13 @@ public class RealtimeFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.REALTIME_SCROLLING);
+            }
+        });
+
+        rootView.findViewById(R.id.cardAddSeriesAtRuntime).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.ADD_SERIES);
             }
         });
 

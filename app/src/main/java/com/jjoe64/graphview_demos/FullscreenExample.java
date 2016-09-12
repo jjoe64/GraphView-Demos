@@ -2,6 +2,7 @@ package com.jjoe64.graphview_demos;
 
 import android.support.annotation.LayoutRes;
 
+import com.jjoe64.graphview_demos.examples.AddSeriesAtRuntime;
 import com.jjoe64.graphview_demos.examples.AdvancedBarGraph;
 import com.jjoe64.graphview_demos.examples.AdvancedLineGraph;
 import com.jjoe64.graphview_demos.examples.BaseExample;
@@ -47,7 +48,8 @@ public enum FullscreenExample {
     STATIC_LABELS(R.layout.fullscreen_example_simple, StaticLabelsGraph.class),
     TAP_LISTENER(R.layout.fullscreen_example_simple, TapListenerGraph.class),
     STYLING_LABELS(R.layout.fullscreen_example_simple, StylingLabels.class),
-    STYLING_COLORS(R.layout.fullscreen_example_simple, StylingColors.class);
+    STYLING_COLORS(R.layout.fullscreen_example_simple, StylingColors.class),
+    ADD_SERIES(R.layout.fullscreen_example_add_series, AddSeriesAtRuntime.class);
 
     public static final String ARG_ID = "FEID";
 
