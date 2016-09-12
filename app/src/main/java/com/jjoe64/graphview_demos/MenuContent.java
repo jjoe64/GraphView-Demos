@@ -5,8 +5,10 @@ import android.support.v4.app.Fragment;
 
 import com.jjoe64.graphview_demos.categories.BarGraphFragment;
 import com.jjoe64.graphview_demos.categories.HelloWorldFragment;
+import com.jjoe64.graphview_demos.categories.PointsGraphFragment;
 import com.jjoe64.graphview_demos.categories.RealtimeFragment;
 import com.jjoe64.graphview_demos.categories.LineGraphFragment;
+import com.jjoe64.graphview_demos.categories.SecondScaleAndLabelsFragment;
 import com.jjoe64.graphview_demos.categories.TimeAndDatesFragment;
 import com.jjoe64.graphview_demos.categories.ZoomingAndScrollingFragment;
 
@@ -36,10 +38,10 @@ public class MenuContent {
         addItem(new MenuItem("2", "Zooming and scrolling", ZoomingAndScrollingFragment.class, R.drawable.welcome));
         addItem(new MenuItem("3", "Realtime plotting", RealtimeFragment.class, R.drawable.welcome));
         addItem(new MenuItem("4", "Time and dates", TimeAndDatesFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("5", "Second scale and custom labels", LineGraphFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("5", "Second scale and labels", SecondScaleAndLabelsFragment.class, R.drawable.welcome));
         addItem(new MenuItem("6", "Line graph", LineGraphFragment.class, R.drawable.welcome));
         addItem(new MenuItem("7", "Bar graph", BarGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("8", "Point graph", HelloWorldFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("8", "Points graph", PointsGraphFragment.class, R.drawable.welcome));
         addItem(new MenuItem("9", "On tap listener", HelloWorldFragment.class, R.drawable.welcome));
         addItem(new MenuItem("10", "Styling examples", HelloWorldFragment.class, R.drawable.welcome));
     }
