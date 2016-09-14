@@ -29,6 +29,18 @@ public class TapListenerGraphFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.TAP_LISTENER);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.TAP_LISTENER);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.TAP_LISTENER);
+            }
+        });
 
         return rootView;
     }

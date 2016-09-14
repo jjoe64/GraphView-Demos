@@ -26,9 +26,10 @@
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph"
+                android:layout_toLeftOf="@+id/imgSource"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Simple line graph"
@@ -44,6 +45,24 @@
                 android:text="Most simple graph"
                 android:textColor="#666"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fullscreen"
+                android:id="@+id/imgFullscreen"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/source"
+                android:id="@+id/imgSource"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/imgFullscreen"
+                android:layout_alignTop="@id/title"/>
 
         </RelativeLayout>
 
@@ -69,9 +88,10 @@
 
             <TextView
                 android:id="@+id/title2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph2"
+                android:layout_toLeftOf="@+id/imgSource2"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Advanced line graph"
@@ -87,6 +107,24 @@
                 android:text="With some more options"
                 android:textColor="#666"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fullscreen"
+                android:id="@+id/imgFullscreen2"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title2"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/source"
+                android:id="@+id/imgSource2"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/imgFullscreen2"
+                android:layout_alignTop="@id/title2"/>
 
         </RelativeLayout>
 
@@ -113,9 +151,10 @@
 
             <TextView
                 android:id="@+id/title3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph3"
+                android:layout_toLeftOf="@+id/imgSource3"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Simple graph via XML"

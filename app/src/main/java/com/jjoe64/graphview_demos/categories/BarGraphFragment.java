@@ -32,6 +32,18 @@ public class BarGraphFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.SIMPLE_BAR_GRAPH);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SIMPLE_BAR_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SIMPLE_BAR_GRAPH);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph2);
         new AdvancedBarGraph().initGraph(graph);
@@ -41,6 +53,18 @@ public class BarGraphFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.ADVANCED_BAR_GRAPH);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.ADVANCED_LINE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.ADVANCED_LINE_GRAPH);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph3);
         new MultipleBarGraph().initGraph(graph);
@@ -48,6 +72,18 @@ public class BarGraphFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.MULTIPLE_BAR_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.MULTIPLE_BAR_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.MULTIPLE_BAR_GRAPH);
             }
         });
 

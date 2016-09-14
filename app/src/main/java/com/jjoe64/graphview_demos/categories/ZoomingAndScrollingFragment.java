@@ -27,6 +27,18 @@ public class ZoomingAndScrollingFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.SCALING_XY);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SCALING_XY);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SCALING_XY);
+            }
+        });
 
         rootView.findViewById(R.id.cardZoomXGraph).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,11 +46,35 @@ public class ZoomingAndScrollingFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.SCALING_X);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SCALING_X);
+            }
+        });
+        rootView.findViewById(R.id.imgSource2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SCALING_X);
+            }
+        });
 
         rootView.findViewById(R.id.cardScrollXGraph).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.SCROLLING_X);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SCROLLING_X);
+            }
+        });
+        rootView.findViewById(R.id.imgSource3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SCROLLING_X);
             }
         });
 

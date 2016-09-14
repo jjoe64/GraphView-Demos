@@ -26,9 +26,10 @@
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph"
+                android:layout_toLeftOf="@+id/imgSource"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Tap listener example"
@@ -44,6 +45,24 @@
                 android:text="Tap on points"
                 android:textColor="#666"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fullscreen"
+                android:id="@+id/imgFullscreen"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/source"
+                android:id="@+id/imgSource"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/imgFullscreen"
+                android:layout_alignTop="@id/title"/>
 
         </RelativeLayout>
 

@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jjoe64.graphview_demos.examples.BaseExample;
 
@@ -60,5 +61,10 @@ public abstract class ItemDetailFragment extends Fragment {
         Intent intent = new Intent(getActivity(), FullscreenActivity.class);
         intent.putExtra(FullscreenExample.ARG_ID, helloWorld.name());
         startActivity(intent);
+    }
+
+    protected void openSource(FullscreenExample helloWorld) {
+        // TODO
+        Toast.makeText(getActivity(), "TODO", Toast.LENGTH_SHORT).show();
     }
 }

@@ -29,6 +29,18 @@ public class HelloWorldFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.HELLO_WORLD);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.HELLO_WORLD);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.HELLO_WORLD);
+            }
+        });
 
         return rootView;
     }

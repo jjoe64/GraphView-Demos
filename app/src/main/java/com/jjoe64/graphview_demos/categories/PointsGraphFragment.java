@@ -31,6 +31,18 @@ public class PointsGraphFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.SIMPLE_POINTS_GRAPH);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SIMPLE_POINTS_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SIMPLE_POINTS_GRAPH);
+            }
+        });
 
         return rootView;
     }

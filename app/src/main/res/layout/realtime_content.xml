@@ -29,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph"
+                android:layout_toLeftOf="@id/imgSource"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Fixed frame example"
@@ -44,6 +45,24 @@
                 android:text="foo bar"
                 android:textColor="#666"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fullscreen"
+                android:id="@+id/imgFullscreen"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/source"
+                android:id="@+id/imgSource"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/imgFullscreen"
+                android:layout_alignTop="@id/title"/>
 
         </RelativeLayout>
 
@@ -72,6 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph2"
+                android:layout_toLeftOf="@+id/imgSource2"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Realtime scrolling"
@@ -87,6 +107,24 @@
                 android:text="Scrolls always to the end"
                 android:textColor="#666"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fullscreen"
+                android:id="@+id/imgFullscreen2"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title2"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/source"
+                android:id="@id/imgSource2"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/imgFullscreen2"
+                android:layout_alignTop="@id/title2"/>
 
         </RelativeLayout>
 
@@ -116,6 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/graph3"
+                android:layout_toLeftOf="@+id/imgSource3"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
                 android:text="Add/Remove series"
@@ -131,6 +170,24 @@
                 android:text="remove and add series at runtime"
                 android:textColor="#666"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fullscreen"
+                android:id="@+id/imgFullscreen3"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title3"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/source"
+                android:id="@id/imgSource3"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/imgFullscreen3"
+                android:layout_alignTop="@id/title3"/>
 
         </RelativeLayout>
 

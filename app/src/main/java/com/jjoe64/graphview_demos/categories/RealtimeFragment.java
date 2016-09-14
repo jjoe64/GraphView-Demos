@@ -41,6 +41,18 @@ public class RealtimeFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.FIXED_FRAME);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.FIXED_FRAME);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.FIXED_FRAME);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph2);
         mLogicRealtimeScrolling.initGraph(graph);
@@ -50,11 +62,35 @@ public class RealtimeFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.REALTIME_SCROLLING);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.REALTIME_SCROLLING);
+            }
+        });
+        rootView.findViewById(R.id.imgSource2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.REALTIME_SCROLLING);
+            }
+        });
 
         rootView.findViewById(R.id.cardAddSeriesAtRuntime).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.ADD_SERIES);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.ADD_SERIES);
+            }
+        });
+        rootView.findViewById(R.id.imgSource3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.ADD_SERIES);
             }
         });
 

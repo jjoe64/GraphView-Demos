@@ -32,6 +32,18 @@ public class SecondScaleAndLabelsFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.SECOND_SCALE_GRAPH);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SECOND_SCALE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SECOND_SCALE_GRAPH);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph2);
         new CustomLabelsGraph().initGraph(graph);
@@ -39,6 +51,18 @@ public class SecondScaleAndLabelsFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.CUSTOM_LABELS);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.CUSTOM_LABELS);
+            }
+        });
+        rootView.findViewById(R.id.imgSource2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.CUSTOM_LABELS);
             }
         });
 
@@ -50,6 +74,18 @@ public class SecondScaleAndLabelsFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.NO_LABELS);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.NO_LABELS);
+            }
+        });
+        rootView.findViewById(R.id.imgSource3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.NO_LABELS);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph4);
         new StaticLabelsGraph().initGraph(graph);
@@ -57,6 +93,18 @@ public class SecondScaleAndLabelsFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.STATIC_LABELS);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.STATIC_LABELS);
+            }
+        });
+        rootView.findViewById(R.id.imgSource4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.STATIC_LABELS);
             }
         });
 

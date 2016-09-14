@@ -30,6 +30,18 @@ public class StylingExamplesFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.STYLING_LABELS);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.STYLING_LABELS);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.STYLING_LABELS);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph2);
         new StylingColors().initGraph(graph);
@@ -39,6 +51,18 @@ public class StylingExamplesFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.STYLING_COLORS);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.STYLING_COLORS);
+            }
+        });
+        rootView.findViewById(R.id.imgSource2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.STYLING_COLORS);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph3);
         new TitlesExample().initGraph(graph);
@@ -46,6 +70,18 @@ public class StylingExamplesFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.TITLES_EXAMPLE);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.TITLES_EXAMPLE);
+            }
+        });
+        rootView.findViewById(R.id.imgSource3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.TITLES_EXAMPLE);
             }
         });
 

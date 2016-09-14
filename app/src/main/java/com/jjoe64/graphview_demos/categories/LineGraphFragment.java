@@ -29,6 +29,18 @@ public class LineGraphFragment extends ItemDetailFragment {
                 openFullscreen(FullscreenExample.SIMPLE_LINE_GRAPH);
             }
         });
+        rootView.findViewById(R.id.imgFullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.SIMPLE_LINE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.SIMPLE_LINE_GRAPH);
+            }
+        });
 
         graph = (GraphView) rootView.findViewById(R.id.graph2);
         new AdvancedLineGraph().initGraph(graph);
@@ -36,6 +48,18 @@ public class LineGraphFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openFullscreen(FullscreenExample.ADVANCED_LINE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.ADVANCED_LINE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.ADVANCED_LINE_GRAPH);
             }
         });
 
