@@ -8,8 +8,8 @@ android {
         applicationId "com.jjoe64.graphview_demos"
         minSdkVersion 9
         targetSdkVersion 22
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 10
+        versionName "4.2"
     }
     buildTypes {
         release {
