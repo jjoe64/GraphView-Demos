@@ -2,6 +2,7 @@ package com.jjoe64.graphview_demos;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -52,7 +53,7 @@ public abstract class ItemDetailFragment extends Fragment {
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
                 appBarLayout.setTitle(mItem.content);
-                appBarLayout.setBackgroundResource(mItem.background);
+                //appBarLayout.setBackgroundResource(mItem.background);
             }
         }
     }
@@ -64,7 +65,8 @@ public abstract class ItemDetailFragment extends Fragment {
     }
 
     protected void openSource(FullscreenExample helloWorld) {
-        // TODO
-        Toast.makeText(getActivity(), "TODO", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent("android.intent.action.VIEW");
+        i.setData(Uri.parse(helloWorld.url));
+        startActivity(i);
     }
 }

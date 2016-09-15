@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/graph3"
-                android:src="@drawable/welcome"/>
+                android:src="@drawable/preview"/>
 
             <TextView
                 android:id="@+id/title3"

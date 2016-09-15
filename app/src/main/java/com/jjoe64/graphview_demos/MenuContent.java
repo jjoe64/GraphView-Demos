@@ -36,16 +36,16 @@ public class MenuContent {
     public static final Map<String, MenuItem> ITEM_MAP = new HashMap<String, MenuItem>();
 
     static {
-        addItem(new MenuItem("1", "Hello world graph", HelloWorldFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("2", "Zooming and scrolling", ZoomingAndScrollingFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("3", "Realtime plotting", RealtimeFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("4", "Time and dates", TimeAndDatesFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("5", "Second scale and labels", SecondScaleAndLabelsFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("6", "Line graph", LineGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("7", "Bar graph", BarGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("8", "Points graph", PointsGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("9", "On tap listener", TapListenerGraphFragment.class, R.drawable.welcome));
-        addItem(new MenuItem("10", "Styling examples", StylingExamplesFragment.class, R.drawable.welcome));
+        addItem(new MenuItem("1", "Hello world graph", HelloWorldFragment.class));
+        addItem(new MenuItem("2", "Zooming and scrolling", ZoomingAndScrollingFragment.class));
+        addItem(new MenuItem("3", "Realtime plotting", RealtimeFragment.class));
+        addItem(new MenuItem("4", "Time and dates", TimeAndDatesFragment.class));
+        addItem(new MenuItem("5", "Second scale and labels", SecondScaleAndLabelsFragment.class));
+        addItem(new MenuItem("6", "Line graph", LineGraphFragment.class));
+        addItem(new MenuItem("7", "Bar graph", BarGraphFragment.class));
+        addItem(new MenuItem("8", "Points graph", PointsGraphFragment.class));
+        addItem(new MenuItem("9", "On tap listener", TapListenerGraphFragment.class));
+        addItem(new MenuItem("10", "Styling examples", StylingExamplesFragment.class));
     }
 
     private static void addItem(MenuItem item) {
@@ -61,17 +61,16 @@ public class MenuContent {
         public final String content;
         public final Class<? extends Fragment> fragmentClass;
 
-        @DrawableRes
-        public final int background;
+        //@DrawableRes
+        //public final int background;
 
         public MenuItem(String id,
                         String content,
-                        Class<? extends Fragment> fragmentClass,
-                        @DrawableRes int background) {
+                        Class<? extends Fragment> fragmentClass) {
             this.id = id;
             this.content = content;
             this.fragmentClass = fragmentClass;
-            this.background = background;
+            //this.background = background;
         }
 
         @Override
