@@ -25,6 +25,7 @@ import com.jjoe64.graphview_demos.examples.StylingColors;
 import com.jjoe64.graphview_demos.examples.StylingLabels;
 import com.jjoe64.graphview_demos.examples.TapListenerGraph;
 import com.jjoe64.graphview_demos.examples.TitlesExample;
+import com.jjoe64.graphview_demos.examples.UniqueLegendLineGraph;
 
 /**
  * Created by jonas on 10.09.16.
@@ -39,6 +40,7 @@ public enum FullscreenExample {
     DATES(R.layout.fullscreen_example_simple, Dates.class),
     SIMPLE_LINE_GRAPH(R.layout.fullscreen_example_simple, SimpleLineGraph.class),
     ADVANCED_LINE_GRAPH(R.layout.fullscreen_example_simple, AdvancedLineGraph.class),
+    UNIQUE_LEGEND_LINE_GRAPH(R.layout.fullscreen_example_simple, UniqueLegendLineGraph.class),
     SIMPLE_BAR_GRAPH(R.layout.fullscreen_example_simple, SimpleBarGraph.class),
     ADVANCED_BAR_GRAPH(R.layout.fullscreen_example_simple, AdvancedBarGraph.class),
     MULTIPLE_BAR_GRAPH(R.layout.fullscreen_example_simple, MultipleBarGraph.class),
