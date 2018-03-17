@@ -11,6 +11,7 @@ import com.jjoe64.graphview_demos.ItemDetailFragment;
 import com.jjoe64.graphview_demos.R;
 import com.jjoe64.graphview_demos.examples.AdvancedLineGraph;
 import com.jjoe64.graphview_demos.examples.SimpleLineGraph;
+import com.jjoe64.graphview_demos.examples.UniqueLegendLineGraph;
 
 /**
  * Created by jonas on 07.09.16.
@@ -60,6 +61,27 @@ public class LineGraphFragment extends ItemDetailFragment {
             @Override
             public void onClick(View view) {
                 openSource(FullscreenExample.ADVANCED_LINE_GRAPH);
+            }
+        });
+
+        graph = (GraphView) rootView.findViewById(R.id.graph4);
+        new UniqueLegendLineGraph().initGraph(graph);
+        rootView.findViewById(R.id.cardUniqueLegendLineGraph).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.UNIQUE_LEGEND_LINE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgFullscreen4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFullscreen(FullscreenExample.UNIQUE_LEGEND_LINE_GRAPH);
+            }
+        });
+        rootView.findViewById(R.id.imgSource4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSource(FullscreenExample.UNIQUE_LEGEND_LINE_GRAPH);
             }
         });
 
