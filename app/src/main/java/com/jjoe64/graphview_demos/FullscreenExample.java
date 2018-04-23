@@ -20,6 +20,7 @@ import com.jjoe64.graphview_demos.examples.SecondScaleGraph;
 import com.jjoe64.graphview_demos.examples.SimpleBarGraph;
 import com.jjoe64.graphview_demos.examples.SimpleLineGraph;
 import com.jjoe64.graphview_demos.examples.SimplePointsGraph;
+import com.jjoe64.graphview_demos.examples.SnapshotShareGraph;
 import com.jjoe64.graphview_demos.examples.StaticLabelsGraph;
 import com.jjoe64.graphview_demos.examples.StylingColors;
 import com.jjoe64.graphview_demos.examples.StylingLabels;
@@ -53,7 +54,9 @@ public enum FullscreenExample {
     STYLING_LABELS(R.layout.fullscreen_example_simple, StylingLabels.class),
     STYLING_COLORS(R.layout.fullscreen_example_simple, StylingColors.class),
     ADD_SERIES(R.layout.fullscreen_example_add_series, AddSeriesAtRuntime.class),
-    TITLES_EXAMPLE(R.layout.fullscreen_example_simple, TitlesExample.class);
+    TITLES_EXAMPLE(R.layout.fullscreen_example_simple, TitlesExample.class),
+    SNAPSHOT_SHARE(R.layout.fullscreen_example_add_series, SnapshotShareGraph.class),
+    ;
 
     public static final String ARG_ID = "FEID";
     static final String URL_PREFIX = "https://github.com/jjoe64/GraphView-Demos/blob/master/app/src/main/java/com/jjoe64/graphview_demos/examples/";

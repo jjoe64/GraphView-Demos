@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 
 import com.jjoe64.graphview_demos.categories.BarGraphFragment;
 import com.jjoe64.graphview_demos.categories.HelloWorldFragment;
+import com.jjoe64.graphview_demos.categories.OthersFragment;
 import com.jjoe64.graphview_demos.categories.PointsGraphFragment;
 import com.jjoe64.graphview_demos.categories.RealtimeFragment;
 import com.jjoe64.graphview_demos.categories.LineGraphFragment;
@@ -46,6 +47,7 @@ public class MenuContent {
         addItem(new MenuItem("8", "Points graph", PointsGraphFragment.class));
         addItem(new MenuItem("9", "On tap listener", TapListenerGraphFragment.class));
         addItem(new MenuItem("10", "Styling examples", StylingExamplesFragment.class));
+        addItem(new MenuItem("11", "Other examples", OthersFragment.class));
     }
 
     private static void addItem(MenuItem item) {
